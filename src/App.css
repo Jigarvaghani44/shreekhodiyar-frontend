@@ -1,0 +1,47 @@
+.bg-light-rosegold-gradient {
+  background-image: linear-gradient(257deg, #da7e91, #dc8495 18%, #e9b3b5 50%, #dc8495 80%, #eebbbe);
+}
+.marquee {
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+}
+
+.marquee p {
+  display: inline-block;
+  animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Tailwind-like utility classes */
+.bg-shopify-green {
+  background-color: #96bf48;
+}
+.bg-shopify-green-dark {
+  background-color: #7da53e;
+}
+.bg-shopify-green-light {
+  background-color: #e6f0d5;
+}
+.text-shopify-green {
+  color: #96bf48;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .process-step {
+    margin-bottom: 2rem;
+  }
+  .process-step:last-child {
+    margin-bottom: 0;
+  }
+}
