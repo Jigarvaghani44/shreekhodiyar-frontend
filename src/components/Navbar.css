@@ -30,7 +30,7 @@
 }
 
 .logo-image {
-  height: 2rem;
+  height: 3rem;
   transition: height 0.3s ease;
 }
 
@@ -128,7 +128,7 @@
 }
 
 .mobile-logo-image {
-  height: 2rem;
+  height: 4rem;
 }
 
 .mobile-close-button {
@@ -197,7 +197,7 @@
   }
   
   .logo-image {
-    height: 2rem;
+    height: 4rem;
   }
 }
 
@@ -230,7 +230,7 @@
   }
   
   .logo-image {
-    height: 3rem;
+    height: 4rem;
   }
 }
 

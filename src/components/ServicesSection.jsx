@@ -9,13 +9,54 @@ const ServicesSection = () => {
 
     const services = [
         {
-            title: 'Mobile Development',
-            icon: <FaCogs />,
-            description: 'Build seamless mobile apps for iOS and Android platforms.',
-            category: 'development',
-            keywords: ['mobile app development', 'iOS apps', 'Android apps'],
-            color: 'from-blue-500 to-cyan-500'
+            title: 'Social Media Marketing',
+            icon: <FaShareAlt />,
+            description: 'Grow your brand across platforms with strategic content and engagement.',
+            category: 'digital-marketing',
+            keywords: ['social media', 'instagram marketing', 'facebook strategy'],
+            color: 'from-sky-500 to-blue-500'
         },
+        {
+            title: 'Social Media Handling',
+            icon: <FaHandsHelping />,
+            description: 'Professional management of your social profiles to build trust and community.',
+            category: 'digital-marketing',
+            keywords: ['social media management', 'page handling', 'community building'],
+            color: 'from-cyan-500 to-teal-500'
+        },
+        {
+            title: 'Google & Meta Ads',
+            icon: <FaBullhorn />,
+            description: 'Drive traffic and leads with powerful ad campaigns across Google and Meta.',
+            category: 'digital-marketing',
+            keywords: ['google ads', 'meta ads', 'paid ads', 'performance marketing'],
+            color: 'from-yellow-500 to-amber-500'
+        },
+        {
+            title: 'Graphics Design',
+            icon: <FaPalette />,
+            description: 'Visual storytelling through eye-catching and effective designs.',
+            category: 'design',
+            keywords: ['graphic design', 'branding', 'visual identity'],
+            color: 'from-pink-500 to-rose-500'
+        },
+        {
+            title: 'SEO',
+            icon: <FaSearch />,
+            description: 'Improve your online visibility with keyword-focused SEO strategies.',
+            category: 'digital-marketing',
+            keywords: ['search engine optimization', 'on-page SEO', 'organic traffic'],
+            color: 'from-green-500 to-emerald-500'
+        },
+        {
+            title: 'Performance Marketing',
+            icon: <FaChartLine />,
+            description: 'Maximize ROI with data-driven advertising and conversion optimization.',
+            category: 'digital-marketing',
+            keywords: ['ROI marketing', 'data-driven ads', 'conversion strategy'],
+            color: 'from-orange-500 to-red-500'
+        },
+
         {
             title: 'Web Development',
             icon: <FaCloud />,
@@ -23,6 +64,14 @@ const ServicesSection = () => {
             category: 'development',
             keywords: ['web development', 'responsive design', 'web applications'],
             color: 'from-blue-600 to-indigo-600'
+        },
+        {
+            title: 'Mobile Development',
+            icon: <FaCogs />,
+            description: 'Build seamless mobile apps for iOS and Android platforms.',
+            category: 'development',
+            keywords: ['mobile app development', 'iOS apps', 'Android apps'],
+            color: 'from-blue-500 to-cyan-500'
         },
         {
             title: 'Shopify Web Development',
@@ -64,70 +113,7 @@ const ServicesSection = () => {
             keywords: ['tech consulting', 'innovation strategy', 'digital transformation'],
             color: 'from-indigo-500 to-violet-500'
         },
-        {
-            title: '2D & 3D Game Development',
-            icon: <FaGamepad />,
-            description: 'Create engaging 2D and 3D games with stunning graphics.',
-            category: 'gaming',
-            keywords: ['game development', '2D games', '3D games'],
-            color: 'from-red-500 to-pink-500'
-        },
-        {
-            title: 'AR/VR Game Development',
-            icon: <FaVrCardboard />,
-            description: 'Immersive augmented and virtual reality gaming experiences.',
-            category: 'gaming',
-            keywords: ['AR development', 'VR games', 'mixed reality'],
-            color: 'from-purple-600 to-blue-600'
-        },
-        // {
-        //     title: 'Social Media Marketing',
-        //     icon: <FaShareAlt />,
-        //     description: 'Grow your brand across platforms with strategic content and engagement.',
-        //     category: 'digital-marketing',
-        //     keywords: ['social media', 'instagram marketing', 'facebook strategy'],
-        //     color: 'from-sky-500 to-blue-500'
-        // },
-        // {
-        //     title: 'Social Media Handling',
-        //     icon: <FaHandsHelping />,
-        //     description: 'Professional management of your social profiles to build trust and community.',
-        //     category: 'digital-marketing',
-        //     keywords: ['social media management', 'page handling', 'community building'],
-        //     color: 'from-cyan-500 to-teal-500'
-        // },
-        // {
-        //     title: 'Google & Meta Ads',
-        //     icon: <FaBullhorn />,
-        //     description: 'Drive traffic and leads with powerful ad campaigns across Google and Meta.',
-        //     category: 'digital-marketing',
-        //     keywords: ['google ads', 'meta ads', 'paid ads', 'performance marketing'],
-        //     color: 'from-yellow-500 to-amber-500'
-        // },
-        {
-            title: 'Graphics Design',
-            icon: <FaPalette />,
-            description: 'Visual storytelling through eye-catching and effective designs.',
-            category: 'design',
-            keywords: ['graphic design', 'branding', 'visual identity'],
-            color: 'from-pink-500 to-rose-500'
-        },
-        // {
-        //     title: 'SEO',
-        //     icon: <FaSearch />,
-        //     description: 'Improve your online visibility with keyword-focused SEO strategies.',
-        //     category: 'digital-marketing',
-        //     keywords: ['search engine optimization', 'on-page SEO', 'organic traffic'],
-        //     color: 'from-green-500 to-emerald-500'
-        // },
-        // {
-        //     title: 'Performance Marketing',
-        //     icon: <FaChartLine />,
-        //     description: 'Maximize ROI with data-driven advertising and conversion optimization.',
-        //     category: 'digital-marketing',
-        //     keywords: ['ROI marketing', 'data-driven ads', 'conversion strategy'],
-        //     color: 'from-orange-500 to-red-500'
-        // },
+
         {
             title: 'ERP & CRM Solutions (Python/Django)',
             icon: <FaDatabase />,
@@ -182,7 +168,7 @@ const ServicesSection = () => {
                     transition={{ duration: 0.6 }}
                     viewport={{ once: true }}
                 >
-                    <div className="text-lg font-medium text-blue-400 mb-3">Why UniTechnoStack??</div>
+                    <div className="text-lg font-medium text-blue-400 mb-3">Why ShreeKhodiyar TechnoStack??</div>
                     <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
                         Comprehensive Digital Solutions
                     </h1>
@@ -197,7 +183,7 @@ const ServicesSection = () => {
                         <div className="w-1/2 pr-8 sticky top-24 h-[calc(100vh-8rem)]">
                             <div className="h-full flex flex-col justify-center">
                                 <p className="text-lg text-gray-300 mb-8">
-                                    We provide complete digital solutions tailored to your business needs,
+                                    we help brands thrive online with performance-driven digital marketing strategies. From SEO and social media to paid ads and content creation — we build custom campaigns that drive real results. We provide complete digital solutions tailored to your business needs,
                                     from initial concept to final implementation and beyond.
                                 </p>
                                 <div className="relative rounded-xl  aspect-video   overflow-visible ">

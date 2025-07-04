@@ -5,7 +5,9 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FiUsers, FiAward, FiDollarSign, FiClock, FiMapPin, FiCheck } from 'react-icons/fi';
+import { FiUsers, FiTarget, FiTrendingUp, FiAward, FiDollarSign, FiClock, FiMapPin, FiCheck, FiChevronDown } from 'react-icons/fi';
+import { FaRocket } from 'react-icons/fa';
+import HomeTestimonials from './HomeTestimonials';
 
 const CareersPage = () => {
     const [activeDepartment, setActiveDepartment] = useState('all');
@@ -146,16 +148,6 @@ const CareersPage = () => {
         { id: 'product', name: 'Product' }
     ];
 
-    // Employee testimonials
-    const testimonials = [
-        {
-            quote: "What I love most is the culture of innovation and the trust to experiment with new technologies.",
-            name: "Sarah Chen",
-            role: "Senior Frontend Developer",
-            tenure: "2 years"
-        },
-        // More testimonials...
-    ];
 
     // Culture highlights
     const cultureHighlights = [
@@ -243,7 +235,7 @@ const CareersPage = () => {
     return (
         <div className="bg-gradient-to-b from-gray-50 to-white">
             {/* **Hero Section** */}
-            <section className="relative py-24 px-6 overflow-hidden">
+            <section className="relative h-screen min-h-[600px] py-24 px-6 overflow-hidden flex items-center justify-center px-6 overflow-hidden bg-gray-50">
                 <div className="max-w-7xl mx-auto text-center relative z-10">
                     <motion.h1
                         initial={{ opacity: 0, y: 20 }}
@@ -282,30 +274,36 @@ const CareersPage = () => {
                     </motion.div>
                 </div>
                 {/* Floating background elements */}
-                <div className="absolute inset-0 overflow-hidden opacity-50">
-                    {[...Array(12)].map((_, i) => (
+                {/* Floating Settings Icons Background */}
+                <div className="absolute inset-0 overflow-hidden opacity-1000 pointer-events-none">
+                    {[...Array(50)].map((_, i) => (
                         <motion.div
                             key={i}
                             animate={{
-                                y: [0, 40, 0],
-                                x: [0, Math.random() * 80 - 40, 0],
-                                rotate: [0, Math.random() * 360]
+                                rotate: 360,
+                                y: [0, Math.random() * 60 - 30],
+                                x: [0, Math.random() * 40 - 20]
                             }}
                             transition={{
-                                duration: 15 + Math.random() * 20,
+                                duration: 30 + Math.random() * 30,
                                 repeat: Infinity,
-                                ease: "easeInOut"
+                                ease: "linear",
+                                repeatType: "loop"
                             }}
-                            className="absolute rounded-lg bg-blue-800"
+                            className="absolute text-blue-400/20"
                             style={{
-                                width: `${Math.random() * 200 + 50}px`,
-                                height: `${Math.random() * 200 + 50}px`,
+                                fontSize: `${Math.random() * 24 + 16}px`,
                                 top: `${Math.random() * 100}%`,
                                 left: `${Math.random() * 100}%`,
-                                opacity: Math.random() * 0.3 + 0.1
                             }}
-                        />
+                        >
+                            <FaRocket className="w-full h-full" />
+                        </motion.div>
                     ))}
+                </div>
+                {/* Subtle scroll indicator */}
+                <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+                    <FiChevronDown className="text-gray-400 w-8 h-8" />
                 </div>
             </section>
 
@@ -353,7 +351,7 @@ const CareersPage = () => {
             </section>
 
             {/* **Our Culture** */}
-            <section id="culture" className="py-20 px-6 bg-gray-100">
+            <section id="culture" className="py-20 px-6 ">
                 <div className="max-w-7xl mx-auto">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl font-bold mb-4">Our<span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600"> Culture</span></h2>
@@ -377,30 +375,10 @@ const CareersPage = () => {
                     </div>
 
                     {/* Employee Testimonials */}
-                    <div className="bg-white rounded-xl shadow-lg p-8 md:p-12">
-                        <h3 className="text-2xl font-bold mb-8">Hear From <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">Our Team</span></h3>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                            {testimonials.map((testimonial, index) => (
-                                <motion.div
-                                    key={index}
-                                    initial={{ opacity: 0, x: index % 2 === 0 ? 50 : -50 }}
-                                    whileInView={{ opacity: 1, x: 0 }}
-                                    transition={{ duration: 0.6 }}
-                                    viewport={{ once: true }}
-                                    className="border-l-4 border-blue-500 pl-6"
-                                >
-                                    <p className="italic text-lg mb-4">&ldquo;{testimonial.quote}</p>
-                                    <div>
-                                        <p className="font-bold">{testimonial.name}</p>
-                                        <p className="text-gray-600">{testimonial.role}</p>
-                                        <p className="text-sm text-gray-500">{testimonial.tenure} at company</p>
-                                    </div>
-                                </motion.div>
-                            ))}
-                        </div>
-                    </div>
+
                 </div>
             </section>
+            <HomeTestimonials />
             {showApplicationForm && (
                 <motion.div
                     initial={{ opacity: 0 }}

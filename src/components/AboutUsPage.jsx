@@ -10,13 +10,13 @@ import {
     FiHeart,
     FiZap,
     FiClock,
-    FiCheck
+    FiCheck, FiBarChart2, FiHome, FiMap
 } from 'react-icons/fi';
 import SecretInvestorsSection from './SecretInvestorsSection';
 
 // Real company data
 const companyData = {
-    founded: "2024",
+    founded: "2022",
     teamSize: "15+",
     clients: "50+",
     satisfaction: "100%",
@@ -99,29 +99,47 @@ const AboutUsPage = () => {
 
     const timeline = useMemo(() => [
         {
-            year: "2024",
+            year: "2022",
             event: "Company Founded",
-            description: "Started with 5 passionate team members working remotely",
+            description: "Launched our operations with 5 passionate team members working remotely from India",
             icon: <FiBriefcase className="text-white" />
         },
         {
-            year: "2024",
+            year: "2022 Q3",
             event: "First Clients",
-            description: "Secured our first 10 paying clients within 3 months",
-            icon: <FiTrendingUp className="text-white" />
+            description: "Onboarded our first 10 paying clients within 3 months of operation",
+            icon: <FiAward className="text-white" />
+        },
+        {
+            year: "2023",
+            event: "Team Expansion",
+            description: "Expanded to 15 full-time employees and established our first physical office in Bangalore",
+            icon: <FiUsers className="text-white" />
+        },
+        {
+            year: "2024 Q1",
+            event: "Client Milestone",
+            description: "Achieved 30+ active clients across various industries",
+            icon: <FiBarChart2 className="text-white" />
+        },
+        {
+            year: "2024 Q3",
+            event: "First International Client",
+            description: "Secured our first client in the United States, marking global expansion",
+            icon: <FiGlobe className="text-white" />
         },
         {
             year: "2025",
-            event: "Team Expansion",
-            description: "Grew to 15 full-time team members with our first office",
-            icon: <FiUsers className="text-white" />
+            event: "Global Expansion",
+            description: "Established operations in 3+ countries with 50+ international clients",
+            icon: <FiMap className="text-white" />
         },
-        // {
-        //     year: "2026",
-        //     event: "Product Launch",
-        //     description: "Released our flagship SaaS product to market",
-        //     icon: <FiZap className="text-white" />
-        // }
+        {
+            year: "2026",
+            event: "Physical Presence",
+            description: "Opened regional offices in USA, Australia, and Europe to serve clients locally",
+            icon: <FiHome className="text-white" />
+        }
     ], []);
 
     // const teamMembers = useMemo(() => [
@@ -370,43 +388,34 @@ const AboutUsPage = () => {
 
             {/* Main Content */}
             <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-                {/* Section Navigation */}
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, delay: 0.2 }}
-                    className="flex justify-center mb-16"
-                >
+                <div className="flex justify-center mb-8">
                     <div className="inline-flex bg-white rounded-full shadow-sm p-1 border border-gray-200">
                         {Object.entries(sections).map(([key, section]) => (
                             <button
                                 key={key}
                                 onClick={() => setActiveSection(key)}
-                                className={`px-5 py-2 rounded-full text-sm sm:text-base transition-colors ${activeSection === key
+                                className={`px-4 py-2 rounded-full text-sm sm:text-base transition-colors duration-200 ${activeSection === key
                                     ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white'
-                                    : 'text-gray-600 hover:text-gray-800'
+                                    : 'text-gray-600 hover:bg-gray-100'
                                     }`}
                             >
                                 {section.title}
                             </button>
                         ))}
                     </div>
-                </motion.div>
+                </div>
 
-                {/* Active Section Content */}
-                <AnimatePresence mode="wait">
-                    <motion.div
-                        key={activeSection}
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -20 }}
-                        transition={{ duration: 0.3 }}
-                        className="mb-20"
-                    >
-                        {sections[activeSection].content}
-                    </motion.div>
-                </AnimatePresence>
-
+                {/* Content with simple fade effect using CSS only */}
+                <div className="relative">
+                    {Object.entries(sections).map(([key, section]) => (
+                        <div
+                            key={key}
+                            className={`transition-opacity duration-200 ${activeSection === key ? 'opacity-100' : 'opacity-0 absolute top-0 left-0'}`}
+                        >
+                            {activeSection === key && section.content}
+                        </div>
+                    ))}
+                </div>
                 {/* Timeline Section */}
                 <section className="py-16">
                     <motion.div

@@ -1,384 +1,301 @@
-// components/WebDesignAgencySection.jsx
 import React from "react";
-import { FiCheckCircle, FiSearch, FiList, FiUsers, FiAward, FiClock, FiThumbsUp } from "react-icons/fi";
+import { FiCheckCircle, FiSearch, FiList, FiUsers, FiAward, FiClock, FiThumbsUp, FiBarChart2, FiTarget, FiDollarSign, FiMail, FiLayers } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
 
-const WebDesignAgencySection = () => {
+const DigitalMarketingAgencySection = () => {
     const navigate = useNavigate();
     const handleClick = () => {
-        navigate("/quickenquiry");
+        navigate("/contact");
     };
+
     return (
-        <section className="bg-gradient-to-b from-white to-gray-50 py-20 px-4 sm:px-6 lg:px-8" id="best-web-design-agency">
-            <div className="max-w-5xl mx-auto">
+        <section className="bg-gradient-to-b from-gray-50 to-white py-20 px-4 sm:px-6 lg:px-8" id="digital-marketing-agency">
+            <div className="max-w-6xl mx-auto">
                 {/* Hero Heading */}
                 <div className="text-center mb-16">
-                    <span className="inline-block px-4 py-1.5 text-xs font-semibold tracking-wide text-indigo-600 bg-indigo-50 rounded-full mb-4 uppercase">
-                        Finding & Working With The
+                    <span className="inline-block px-4 py-1.5 text-xs font-semibold tracking-wide text-blue-600 bg-blue-50 rounded-full mb-4 uppercase">
+                        Premier Digital Marketing Solutions
                     </span>
                     <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-                        Best <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">Right Digital Solutions</span> Partner
+                        Transform Your <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">Online Presence</span>
                     </h1>
                     <div className="max-w-3xl mx-auto grid md:grid-cols-2 gap-8 text-lg text-gray-600">
                         <p className="leading-relaxed">
-                            Whether you&apos;re launching a new business, scaling your digital presence, or optimizing operations, working with a professional technology agency unlocks a world of possibilities.
+                            In today's digital landscape, having a strategic marketing approach is no longer optional. We craft data-driven campaigns that deliver measurable results and real business growth.
                         </p>
                         <p className="leading-relaxed">
-                            Top agencies combine cutting-edge technology with proven strategies to create high-performing Digital Solutions. Discover how to identify the perfect partner for your project.
+                            Our full-service digital marketing agency combines creativity with analytics to help brands stand out, attract qualified leads, and convert them into loyal customers.
                         </p>
                     </div>
                 </div>
 
-                {/* Visual Navigation */}
-                <div className="mb-20">
-                    <h2 className="text-2xl font-semibold text-center mb-8">Your Roadmap to Success</h2>
-                    <div className="bg-white rounded-xl shadow-sm p-6 md:p-8 border border-gray-100">
-                        <div className="grid md:grid-cols-6 gap-4 text-center">
-                            {[
-                                { icon: <FiSearch className="mx-auto text-indigo-600" size={20} />, label: "Define Needs", id: "step-1" },
-                                { icon: <FiSearch className="mx-auto text-indigo-600" size={20} />, label: "Start Search", id: "step-2" },
-                                { icon: <FiList className="mx-auto text-indigo-600" size={20} />, label: "Research", id: "step-3" },
-                                { icon: <FiUsers className="mx-auto text-indigo-600" size={20} />, label: "Meet Agencies", id: "step-4" },
-                                { icon: <FiThumbsUp className="mx-auto text-indigo-600" size={20} />, label: "Decide", id: "step-5" },
-                                { icon: <FiAward className="mx-auto text-indigo-600" size={20} />, label: "Why Us", id: "why-choose-us" },
-                            ].map((item, index) => (
-                                <a
-                                    key={index}
-                                    href={`#${item.id}`}
-                                    className="group flex flex-col items-center"
-                                >
-                                    <div className="w-12 h-12 flex items-center justify-center bg-indigo-50 rounded-full group-hover:bg-indigo-100 transition-colors mb-2">
-                                        {item.icon}
+                {/* Services Overview */}
+                <div className="mb-20 bg-white rounded-xl shadow-sm p-6 md:p-8 border border-gray-100">
+                    <h2 className="text-2xl font-semibold text-center mb-8">Our Core Digital Marketing Services</h2>
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+                        {[
+                            { icon: <FiSearch className="mx-auto text-blue-600" size={24} />, label: "SEO", desc: "Search Engine Optimization" },
+                            { icon: <FiBarChart2 className="mx-auto text-purple-600" size={24} />, label: "PPC", desc: "Pay-Per-Click Advertising" },
+                            { icon: <FiUsers className="mx-auto text-pink-600" size={24} />, label: "Social Media", desc: "Management & Ads" },
+                            { icon: <FiMail className="mx-auto text-red-600" size={24} />, label: "Email", desc: "Marketing Automation" },
+                            { icon: <FiTarget className="mx-auto text-orange-600" size={24} />, label: "Content", desc: "Strategy & Creation" },
+                            { icon: <FiLayers className="mx-auto text-green-600" size={24} />, label: "Conversion", desc: "Rate Optimization" },
+                            { icon: <FiDollarSign className="mx-auto text-indigo-600" size={24} />, label: "ROI", desc: "Performance Tracking" },
+                            { icon: <FiAward className="mx-auto text-yellow-600" size={24} />, label: "Branding", desc: "Digital Identity" },
+                        ].map((service, index) => (
+                            <div key={index} className="text-center group">
+                                <div className="w-16 h-16 mx-auto flex items-center justify-center bg-blue-50 rounded-xl group-hover:bg-blue-100 transition-colors mb-3">
+                                    {service.icon}
+                                </div>
+                                <h3 className="font-semibold text-gray-800">{service.label}</h3>
+                                <p className="text-sm text-gray-500 mt-1">{service.desc}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
+                {/* Process Steps */}
+                <div className="space-y-12">
+                    {/* Strategy Phase */}
+                    <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
+                        <div className="flex flex-col md:flex-row gap-8">
+                            <div className="md:w-1/3">
+                                <h2 className="text-2xl font-semibold mb-4 flex items-center">
+                                    <span className="w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-3">1</span>
+                                    Discovery & Strategy
+                                </h2>
+                                <p className="text-gray-600">
+                                    We begin by deeply understanding your business, audience, and goals to craft a customized digital marketing roadmap.
+                                </p>
+                            </div>
+                            <div className="md:w-2/3">
+                                <div className="grid sm:grid-cols-2 gap-6">
+                                    <div>
+                                        <h3 className="font-medium text-gray-900 mb-2">Research Components:</h3>
+                                        <ul className="space-y-2 text-gray-600">
+                                            <li className="flex items-start">
+                                                <FiCheckCircle className="flex-shrink-0 text-blue-500 mt-0.5 mr-2" />
+                                                <span>Competitor analysis</span>
+                                            </li>
+                                            <li className="flex items-start">
+                                                <FiCheckCircle className="flex-shrink-0 text-blue-500 mt-0.5 mr-2" />
+                                                <span>Keyword research</span>
+                                            </li>
+                                            <li className="flex items-start">
+                                                <FiCheckCircle className="flex-shrink-0 text-blue-500 mt-0.5 mr-2" />
+                                                <span>Audience profiling</span>
+                                            </li>
+                                        </ul>
                                     </div>
-                                    <span className="text-sm font-medium text-gray-700 group-hover:text-indigo-600 transition-colors">{item.label}</span>
-                                </a>
-                            ))}
+                                    <div>
+                                        <h3 className="font-medium text-gray-900 mb-2">Strategic Outputs:</h3>
+                                        <ul className="space-y-2 text-gray-600">
+                                            <li className="flex items-start">
+                                                <FiCheckCircle className="flex-shrink-0 text-blue-500 mt-0.5 mr-2" />
+                                                <span>Channel strategy</span>
+                                            </li>
+                                            <li className="flex items-start">
+                                                <FiCheckCircle className="flex-shrink-0 text-blue-500 mt-0.5 mr-2" />
+                                                <span>Content calendar</span>
+                                            </li>
+                                            <li className="flex items-start">
+                                                <FiCheckCircle className="flex-shrink-0 text-blue-500 mt-0.5 mr-2" />
+                                                <span>KPI framework</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Execution Phase */}
+                    <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
+                        <div className="flex flex-col md:flex-row gap-8">
+                            <div className="md:w-1/3">
+                                <h2 className="text-2xl font-semibold mb-4 flex items-center">
+                                    <span className="w-8 h-8 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center mr-3">2</span>
+                                    Campaign Execution
+                                </h2>
+                                <p className="text-gray-600">
+                                    Our team implements your strategy with precision, combining creative assets with technical optimization for maximum impact.
+                                </p>
+                            </div>
+                            <div className="md:w-2/3">
+                                <div className="grid sm:grid-cols-2 gap-6">
+                                    <div>
+                                        <h3 className="font-medium text-gray-900 mb-2">Implementation:</h3>
+                                        <ul className="space-y-2 text-gray-600">
+                                            <li className="flex items-start">
+                                                <FiCheckCircle className="flex-shrink-0 text-purple-500 mt-0.5 mr-2" />
+                                                <span>SEO technical setup</span>
+                                            </li>
+                                            <li className="flex items-start">
+                                                <FiCheckCircle className="flex-shrink-0 text-purple-500 mt-0.5 mr-2" />
+                                                <span>Ad campaign creation</span>
+                                            </li>
+                                            <li className="flex items-start">
+                                                <FiCheckCircle className="flex-shrink-0 text-purple-500 mt-0.5 mr-2" />
+                                                <span>Content production</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h3 className="font-medium text-gray-900 mb-2">Optimization:</h3>
+                                        <ul className="space-y-2 text-gray-600">
+                                            <li className="flex items-start">
+                                                <FiCheckCircle className="flex-shrink-0 text-purple-500 mt-0.5 mr-2" />
+                                                <span>A/B testing</span>
+                                            </li>
+                                            <li className="flex items-start">
+                                                <FiCheckCircle className="flex-shrink-0 text-purple-500 mt-0.5 mr-2" />
+                                                <span>Bid management</span>
+                                            </li>
+                                            <li className="flex items-start">
+                                                <FiCheckCircle className="flex-shrink-0 text-purple-500 mt-0.5 mr-2" />
+                                                <span>Conversion tracking</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Growth Phase */}
+                    <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
+                        <div className="flex flex-col md:flex-row gap-8">
+                            <div className="md:w-1/3">
+                                <h2 className="text-2xl font-semibold mb-4 flex items-center">
+                                    <span className="w-8 h-8 bg-green-100 text-green-600 rounded-full flex items-center justify-center mr-3">3</span>
+                                    Growth & Scaling
+                                </h2>
+                                <p className="text-gray-600">
+                                    We continuously analyze performance data to refine strategies and scale what's working for sustainable business growth.
+                                </p>
+                            </div>
+                            <div className="md:w-2/3">
+                                <div className="grid sm:grid-cols-2 gap-6">
+                                    <div>
+                                        <h3 className="font-medium text-gray-900 mb-2">Analysis:</h3>
+                                        <ul className="space-y-2 text-gray-600">
+                                            <li className="flex items-start">
+                                                <FiCheckCircle className="flex-shrink-0 text-green-500 mt-0.5 mr-2" />
+                                                <span>Performance reporting</span>
+                                            </li>
+                                            <li className="flex items-start">
+                                                <FiCheckCircle className="flex-shrink-0 text-green-500 mt-0.5 mr-2" />
+                                                <span>ROI measurement</span>
+                                            </li>
+                                            <li className="flex items-start">
+                                                <FiCheckCircle className="flex-shrink-0 text-green-500 mt-0.5 mr-2" />
+                                                <span>Competitor benchmarking</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h3 className="font-medium text-gray-900 mb-2">Scaling:</h3>
+                                        <ul className="space-y-2 text-gray-600">
+                                            <li className="flex items-start">
+                                                <FiCheckCircle className="flex-shrink-0 text-green-500 mt-0.5 mr-2" />
+                                                <span>Budget reallocation</span>
+                                            </li>
+                                            <li className="flex items-start">
+                                                <FiCheckCircle className="flex-shrink-0 text-green-500 mt-0.5 mr-2" />
+                                                <span>Channel expansion</span>
+                                            </li>
+                                            <li className="flex items-start">
+                                                <FiCheckCircle className="flex-shrink-0 text-green-500 mt-0.5 mr-2" />
+                                                <span>Automation implementation</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                {/* Enhanced Steps */}
-                <div className="space-y-16">
-                    {/* Step 1 */}
-                    <div id="step-1" className="scroll-mt-24">
-                        <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
-                            <h2 className="text-2xl font-semibold mb-4 flex items-center">
-                                <span className="w-8 h-8 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center mr-3">1</span>
-                                Define Your Project Requirements
-                            </h2>
-                            <div className="grid md:grid-cols-2 gap-6 mt-6">
-                                <div>
-                                    <h3 className="font-medium text-gray-900 mb-2">Key Considerations:</h3>
-                                    <ul className="space-y-2 text-gray-600">
-                                        <li className="flex items-start">
-                                            <FiCheckCircle className="flex-shrink-0 text-indigo-500 mt-0.5 mr-2" />
-                                            <span>New build vs redesign requirements</span>
-                                        </li>
-                                        <li className="flex items-start">
-                                            <FiCheckCircle className="flex-shrink-0 text-indigo-500 mt-0.5 mr-2" />
-                                            <span>Custom design vs template approach</span>
-                                        </li>
-                                        <li className="flex items-start">
-                                            <FiCheckCircle className="flex-shrink-0 text-indigo-500 mt-0.5 mr-2" />
-                                            <span>SEO and conversion objectives</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <h3 className="font-medium text-gray-900 mb-2">Technical Needs:</h3>
-                                    <ul className="space-y-2 text-gray-600">
-                                        <li className="flex items-start">
-                                            <FiCheckCircle className="flex-shrink-0 text-indigo-500 mt-0.5 mr-2" />
-                                            <span>E-commerce functionality</span>
-                                        </li>
-                                        <li className="flex items-start">
-                                            <FiCheckCircle className="flex-shrink-0 text-indigo-500 mt-0.5 mr-2" />
-                                            <span>CMS platform preferences</span>
-                                        </li>
-                                        <li className="flex items-start">
-                                            <FiCheckCircle className="flex-shrink-0 text-indigo-500 mt-0.5 mr-2" />
-                                            <span>Integration requirements</span>
-                                        </li>
-                                    </ul>
-                                </div>
+                {/* Why Choose Us */}
+                <div className="mt-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl p-8 text-white">
+                    <div className="max-w-4xl mx-auto">
+                        <h2 className="text-3xl font-bold mb-6 text-center">Why Our Digital Marketing Agency Stands Out</h2>
+                        <div className="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h3 className="text-xl font-semibold mb-4">Our Approach</h3>
+                                <ul className="space-y-4">
+                                    <li className="flex items-start">
+                                        <div className="bg-white bg-opacity-20 rounded-full p-1.5 mr-3">
+                                            <FiTarget className="text-white" />
+                                        </div>
+                                        <div>
+                                            <h4 className="font-semibold">Data-Driven Strategies</h4>
+                                            <p className="text-blue-100 text-sm mt-1">Decisions based on analytics, not assumptions</p>
+                                        </div>
+                                    </li>
+                                    <li className="flex items-start">
+                                        <div className="bg-white bg-opacity-20 rounded-full p-1.5 mr-3">
+                                            <FiBarChart2 className="text-white" />
+                                        </div>
+                                        <div>
+                                            <h4 className="font-semibold">Transparent Reporting</h4>
+                                            <p className="text-blue-100 text-sm mt-1">Real-time dashboards with clear metrics</p>
+                                        </div>
+                                    </li>
+                                    <li className="flex items-start">
+                                        <div className="bg-white bg-opacity-20 rounded-full p-1.5 mr-3">
+                                            <FiUsers className="text-white" />
+                                        </div>
+                                        <div>
+                                            <h4 className="font-semibold">Dedicated Account Team</h4>
+                                            <p className="text-blue-100 text-sm mt-1">Your personal marketing experts</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 className="text-xl font-semibold mb-4">Client Success</h3>
+                                <ul className="space-y-4">
+                                    <li className="flex items-start">
+                                        <div className="bg-white bg-opacity-20 rounded-full p-1.5 mr-3">
+                                            <FiDollarSign className="text-white" />
+                                        </div>
+                                        <div>
+                                            <h4 className="font-semibold">Proven ROI</h4>
+                                            <p className="text-blue-100 text-sm mt-1">Average 3-5x return on ad spend</p>
+                                        </div>
+                                    </li>
+                                    <li className="flex items-start">
+                                        <div className="bg-white bg-opacity-20 rounded-full p-1.5 mr-3">
+                                            <FiClock className="text-white" />
+                                        </div>
+                                        <div>
+                                            <h4 className="font-semibold">Quick Results</h4>
+                                            <p className="text-blue-100 text-sm mt-1">First improvements within 30 days</p>
+                                        </div>
+                                    </li>
+                                    <li className="flex items-start">
+                                        <div className="bg-white bg-opacity-20 rounded-full p-1.5 mr-3">
+                                            <FiAward className="text-white" />
+                                        </div>
+                                        <div>
+                                            <h4 className="font-semibold">Industry Recognition</h4>
+                                            <p className="text-blue-100 text-sm mt-1">Award-winning campaign strategies</p>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-                    </div>
-
-                    {/* Step 2 */}
-                    <div id="step-2" className="scroll-mt-24">
-                        <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
-                            <h2 className="text-2xl font-semibold mb-4 flex items-center">
-                                <span className="w-8 h-8 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center mr-3">2</span>
-                                Begin Your Agency Search
-                            </h2>
-                            <p className="text-gray-600 mb-6">
-                                Start with these proven methods to find qualified web design partners:
+                        <div className="mt-10 text-center">
+                            <button
+                                onClick={handleClick}
+                                className="bg-white text-blue-600 font-semibold px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors shadow-md hover:shadow-lg"
+                            >
+                                Get Your Free Marketing Audit
+                            </button>
+                            <p className="text-blue-100 text-sm mt-3">
+                                Discover opportunities to grow your business online
                             </p>
-                            <div className="grid md:grid-cols-2 gap-6">
-                                <div>
-                                    <h3 className="font-medium text-gray-900 mb-2">Discovery Channels:</h3>
-                                    <ul className="space-y-2 text-gray-600">
-                                        <li className="flex items-start">
-                                            <FiCheckCircle className="flex-shrink-0 text-indigo-500 mt-0.5 mr-2" />
-                                            <span>Industry directories (Clutch, DesignRush)</span>
-                                        </li>
-                                        <li className="flex items-start">
-                                            <FiCheckCircle className="flex-shrink-0 text-indigo-500 mt-0.5 mr-2" />
-                                            <span>Google search with location filters</span>
-                                        </li>
-                                        <li className="flex items-start">
-                                            <FiCheckCircle className="flex-shrink-0 text-indigo-500 mt-0.5 mr-2" />
-                                            <span>Professional recommendations</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <h3 className="font-medium text-gray-900 mb-2">Evaluation Criteria:</h3>
-                                    <ul className="space-y-2 text-gray-600">
-                                        <li className="flex items-start">
-                                            <FiCheckCircle className="flex-shrink-0 text-indigo-500 mt-0.5 mr-2" />
-                                            <span>Portfolio quality and relevance</span>
-                                        </li>
-                                        <li className="flex items-start">
-                                            <FiCheckCircle className="flex-shrink-0 text-indigo-500 mt-0.5 mr-2" />
-                                            <span>Client testimonials and case studies</span>
-                                        </li>
-                                        <li className="flex items-start">
-                                            <FiCheckCircle className="flex-shrink-0 text-indigo-500 mt-0.5 mr-2" />
-                                            <span>Service offerings and expertise</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Step 3 */}
-                    <div id="step-3" className="scroll-mt-24">
-                        <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
-                            <h2 className="text-2xl font-semibold mb-4 flex items-center">
-                                <span className="w-8 h-8 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center mr-3">3</span>
-                                Research & Shortlist Agencies
-                            </h2>
-                            <p className="text-gray-600 mb-6">
-                                Narrow down your options with these evaluation tactics:
-                            </p>
-                            <div className="grid md:grid-cols-2 gap-6">
-                                <div>
-                                    <h3 className="font-medium text-gray-900 mb-2">Portfolio Assessment:</h3>
-                                    <ul className="space-y-2 text-gray-600">
-                                        <li className="flex items-start">
-                                            <FiCheckCircle className="flex-shrink-0 text-indigo-500 mt-0.5 mr-2" />
-                                            <span>Design aesthetics and creativity</span>
-                                        </li>
-                                        <li className="flex items-start">
-                                            <FiCheckCircle className="flex-shrink-0 text-indigo-500 mt-0.5 mr-2" />
-                                            <span>User experience quality</span>
-                                        </li>
-                                        <li className="flex items-start">
-                                            <FiCheckCircle className="flex-shrink-0 text-indigo-500 mt-0.5 mr-2" />
-                                            <span>Mobile responsiveness</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <h3 className="font-medium text-gray-900 mb-2">Client Validation:</h3>
-                                    <ul className="space-y-2 text-gray-600">
-                                        <li className="flex items-start">
-                                            <FiCheckCircle className="flex-shrink-0 text-indigo-500 mt-0.5 mr-2" />
-                                            <span>Read verified client reviews</span>
-                                        </li>
-                                        <li className="flex items-start">
-                                            <FiCheckCircle className="flex-shrink-0 text-indigo-500 mt-0.5 mr-2" />
-                                            <span>Request client references</span>
-                                        </li>
-                                        <li className="flex items-start">
-                                            <FiCheckCircle className="flex-shrink-0 text-indigo-500 mt-0.5 mr-2" />
-                                            <span>Check industry recognition</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Step 4 */}
-                    <div id="step-4" className="scroll-mt-24">
-                        <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
-                            <h2 className="text-2xl font-semibold mb-4 flex items-center">
-                                <span className="w-8 h-8 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center mr-3">4</span>
-                                Meet With Potential Agencies
-                            </h2>
-                            <p className="text-gray-600 mb-6">
-                                Conduct productive consultations with these key discussion points:
-                            </p>
-                            <div className="grid md:grid-cols-2 gap-6">
-                                <div>
-                                    <h3 className="font-medium text-gray-900 mb-2">Process Evaluation:</h3>
-                                    <ul className="space-y-2 text-gray-600">
-                                        <li className="flex items-start">
-                                            <FiCheckCircle className="flex-shrink-0 text-indigo-500 mt-0.5 mr-2" />
-                                            <span>Design and development methodology</span>
-                                        </li>
-                                        <li className="flex items-start">
-                                            <FiCheckCircle className="flex-shrink-0 text-indigo-500 mt-0.5 mr-2" />
-                                            <span>Project management approach</span>
-                                        </li>
-                                        <li className="flex items-start">
-                                            <FiCheckCircle className="flex-shrink-0 text-indigo-500 mt-0.5 mr-2" />
-                                            <span>Communication protocols</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <h3 className="font-medium text-gray-900 mb-2">Practical Considerations:</h3>
-                                    <ul className="space-y-2 text-gray-600">
-                                        <li className="flex items-start">
-                                            <FiCheckCircle className="flex-shrink-0 text-indigo-500 mt-0.5 mr-2" />
-                                            <span>Realistic timeline expectations</span>
-                                        </li>
-                                        <li className="flex items-start">
-                                            <FiCheckCircle className="flex-shrink-0 text-indigo-500 mt-0.5 mr-2" />
-                                            <span>Pricing structure and value</span>
-                                        </li>
-                                        <li className="flex items-start">
-                                            <FiCheckCircle className="flex-shrink-0 text-indigo-500 mt-0.5 mr-2" />
-                                            <span>Post-launch support options</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Step 5 */}
-                    <div id="step-5" className="scroll-mt-24">
-                        <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
-                            <h2 className="text-2xl font-semibold mb-4 flex items-center">
-                                <span className="w-8 h-8 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center mr-3">5</span>
-                                Make Your Final Decision
-                            </h2>
-                            <p className="text-gray-600 mb-6">
-                                Select the ideal partner using these decisive factors:
-                            </p>
-                            <div className="grid md:grid-cols-2 gap-6">
-                                <div>
-                                    <h3 className="font-medium text-gray-900 mb-2">Strategic Alignment:</h3>
-                                    <ul className="space-y-2 text-gray-600">
-                                        <li className="flex items-start">
-                                            <FiCheckCircle className="flex-shrink-0 text-indigo-500 mt-0.5 mr-2" />
-                                            <span>Understanding of your vision</span>
-                                        </li>
-                                        <li className="flex items-start">
-                                            <FiCheckCircle className="flex-shrink-0 text-indigo-500 mt-0.5 mr-2" />
-                                            <span>Strategic recommendations</span>
-                                        </li>
-                                        <li className="flex items-start">
-                                            <FiCheckCircle className="flex-shrink-0 text-indigo-500 mt-0.5 mr-2" />
-                                            <span>Cultural fit with your team</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <h3 className="font-medium text-gray-900 mb-2">Execution Confidence:</h3>
-                                    <ul className="space-y-2 text-gray-600">
-                                        <li className="flex items-start">
-                                            <FiCheckCircle className="flex-shrink-0 text-indigo-500 mt-0.5 mr-2" />
-                                            <span>Clear project ownership</span>
-                                        </li>
-                                        <li className="flex items-start">
-                                            <FiCheckCircle className="flex-shrink-0 text-indigo-500 mt-0.5 mr-2" />
-                                            <span>Transparent communication</span>
-                                        </li>
-                                        <li className="flex items-start">
-                                            <FiCheckCircle className="flex-shrink-0 text-indigo-500 mt-0.5 mr-2" />
-                                            <span>Proven results in your industry</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Why Choose Us */}
-                    <div id="why-choose-us" className="scroll-mt-24">
-                        <div className="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-xl p-8 text-white">
-                            <h2 className="text-2xl font-bold mb-6">Why Partner With Unitechnostack?</h2>
-                            <div className="grid md:grid-cols-2 gap-8">
-                                <div>
-                                    <h3 className="text-xl font-semibold mb-4">Our Differentiators</h3>
-                                    <ul className="space-y-4">
-                                        <li className="flex items-start">
-                                            <div className="bg-white bg-opacity-20 rounded-full p-1.5 mr-3">
-                                                <FiAward className="text-white" />
-                                            </div>
-                                            <div>
-                                                <h4 className="font-semibold">Award-Winning Excellence</h4>
-                                                <p className="text-indigo-100 text-sm mt-1">Recognized industry leaders with multiple design awards</p>
-                                            </div>
-                                        </li>
-                                        <li className="flex items-start">
-                                            <div className="bg-white bg-opacity-20 rounded-full p-1.5 mr-3">
-                                                <FiCheckCircle className="text-white" />
-                                            </div>
-                                            <div>
-                                                <h4 className="font-semibold">End-to-End Ownership</h4>
-                                                <p className="text-indigo-100 text-sm mt-1">We treat every project as our own, from concept to launch</p>
-                                            </div>
-                                        </li>
-                                        <li className="flex items-start">
-                                            <div className="bg-white bg-opacity-20 rounded-full p-1.5 mr-3">
-                                                <FiClock className="text-white" />
-                                            </div>
-                                            <div>
-                                                <h4 className="font-semibold">Timely Delivery</h4>
-                                                <p className="text-indigo-100 text-sm mt-1">90% of projects delivered on or ahead of schedule</p>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <h3 className="text-xl font-semibold mb-4">Client Benefits</h3>
-                                    <ul className="space-y-4">
-                                        <li className="flex items-start">
-                                            <div className="bg-white bg-opacity-20 rounded-full p-1.5 mr-3">
-                                                <FiUsers className="text-white" />
-                                            </div>
-                                            <div>
-                                                <h4 className="font-semibold">Dedicated Team Approach</h4>
-                                                <p className="text-indigo-100 text-sm mt-1">Your own project manager, designer, and developer</p>
-                                            </div>
-                                        </li>
-                                        <li className="flex items-start">
-                                            <div className="bg-white bg-opacity-20 rounded-full p-1.5 mr-3">
-                                                <FiCheckCircle className="text-white" />
-                                            </div>
-                                            <div>
-                                                <h4 className="font-semibold">Transparent Process</h4>
-                                                <p className="text-indigo-100 text-sm mt-1">Real-time updates and collaborative decision making</p>
-                                            </div>
-                                        </li>
-                                        <li className="flex items-start">
-                                            <div className="bg-white bg-opacity-20 rounded-full p-1.5 mr-3">
-                                                <FiThumbsUp className="text-white" />
-                                            </div>
-                                            <div>
-                                                <h4 className="font-semibold">Results Guarantee</h4>
-                                                <p className="text-indigo-100 text-sm mt-1">We measure success by your business outcomes</p>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className="mt-8 pt-6 border-t border-indigo-400">
-                                <button onClick={handleClick} className="bg-white text-indigo-600 font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition-colors shadow-md hover:shadow-lg">
-                                    Schedule Free Consultation
-                                </button>
-                                <p className="text-indigo-100 text-sm mt-3">
-                                    Get a custom proposal within 24 hours
-                                </p>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -387,4 +304,4 @@ const WebDesignAgencySection = () => {
     );
 };
 
-export default WebDesignAgencySection;
+export default DigitalMarketingAgencySection;

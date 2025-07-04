@@ -30,7 +30,7 @@ const Navbar = () => {
     const navItems = [
         { name: "Home", icon: <FaHome className="nav-icon" />, path: "/" },
         { name: "Service", icon: <FaTools className="nav-icon" />, path: "/services" },
-        { name: "Portfolio", icon: <FaBriefcase className="nav-icon" />, path: "/portfolio" },
+        { name: "Work", icon: <FaBriefcase className="nav-icon" />, path: "/portfolio" },
         { name: "Career", icon: <FaUserGraduate className="nav-icon" />, path: "/carrer" },
         { name: "About Us", icon: <FaInfoCircle className="nav-icon" />, path: "/about" },
     ];
@@ -39,12 +39,12 @@ const Navbar = () => {
         <nav className={`navbar ${scrolled ? "navbar-scrolled" : ""} `}>
             <div className="navbar-container">
                 {/* Logo */}
-                <a href="/" className="navbar-logo">
+                <a href="/" className="navbar-logo ">
                     <img
-                        src="/unitechlogo1.png"
-                        alt="UniTechnoStack logo"
+                        src="/shreelogo.png"
+                        alt="ShreeKhodiyarTechnostack logo"
                         className="logo-image"
-                    /> &nbsp;&nbsp;<span className='bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 text-2xl font-bold'>UniTechnoStack</span>
+                    />
                 </a>
 
                 {/* Desktop Navigation - Hidden on mobile */}
@@ -99,11 +99,11 @@ const Navbar = () => {
                         >
                             <div className="mobile-menu-header">
                                 <a href="/" className="mobile-logo">
-                                    {/* <img
-                                        src="/s1logo.webp"
+                                    <img
+                                        src="/shreelogo.png"
                                         alt="softSprite Logo"
                                         className="mobile-logo-image"
-                                    /> */}<span className='bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 text-2xl font-bold'>UniTechnoStack</span>
+                                    />
                                 </a>
                                 {/* <button
                                     onClick={toggleMenu}

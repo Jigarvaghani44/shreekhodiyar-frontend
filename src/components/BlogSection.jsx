@@ -16,6 +16,59 @@ const accentColors = [
 
 const BlogSection = () => {
     const [articles, setArticles] = useState([]);
+    const [articlesTemp, setArticlesTemp] = useState([{
+        _id: "6850edf780230d4e8b2df7ba",
+        title: "How Machine Learning Is Powering Healthcare Innovation",
+        excerpt:
+            "Discover how ML algorithms are transforming patient diagnostics, drug discovery, and personalized treatment plans in modern healthcare systems.",
+        author: "Alex Johnson",
+        date: "2025-05-11T18:30:00.000Z",
+        readTime: "8 min read",
+        category: "Web Development",
+        image: "/images/blog/healthcare-ai.jpg",
+        accentColor: "from-purple-500 to-blue-500",
+        slug: "future-of-responsive-web-design",
+        metaTitle: "The Future of Responsive Web Design | Trends & Predictions",
+        metaDescription:
+            "Explore the latest trends and future predictions in responsive web design that will shape digital experiences in 2023 and beyond.",
+        content: [
+            {
+                type: "heading",
+                level: 2,
+                text: "Introduction to Modern Responsive Design",
+            },
+            {
+                type: "paragraph",
+                text: "The landscape of responsive web design continues to evolve rapidly with new technologies and user expectations.",
+            },
+            {
+                type: "heading",
+                level: 2,
+                text: "Key Trends for 2023",
+            },
+            {
+                type: "paragraph",
+                text: "Several exciting trends are emerging in responsive design that will shape how we build digital experiences.",
+            },
+            {
+                type: "image",
+                src: "https://source.unsplash.com/random/800x400/?tech",
+                alt: "Technology illustration",
+                caption:
+                    "Modern web design tools have revolutionized how we build interfaces",
+            },
+        ],
+        featuredImage: "https://source.unsplash.com/random/1200x600/?webdesign",
+        lastUpdated: "2023-05-19T18:30:00.000Z",
+        tags: ["Design", "Responsive", "UI/UX", "Development"],
+        status: "published",
+        stats: {
+            likes: 0,
+        },
+        createdAt: "2025-06-17T04:24:23.911Z",
+        updatedAt: "2025-06-28T06:08:39.542Z",
+        publishedAt: "2025-06-25T00:00:00.000Z"
+    }]);
 
     // 🧠 Simple read time calculator based on word count
     useEffect(() => {
@@ -41,11 +94,12 @@ const BlogSection = () => {
                 setArticles(formattedArticles);
             } catch (error) {
                 console.error("Error fetching blog articles:", error);
+                setArticles(articlesTemp);
             }
         };
 
         fetchArticles();
-    }, []);
+    }, [articlesTemp]);
     // const navigate = useNavigate();
 
     // const handleClick = () => {

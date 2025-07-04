@@ -78,14 +78,15 @@ const HeroSection = () => {
 
             {/* Content */}
             <div className="relative z-10  mx-auto px-4 py-24 md:py-32 lg:py-40">
+
                 <div className="max-w-4xl mx-auto text-center">
                     <div className="mb-4 mt-20">
-                        <h1 className="text-2xl md:text-3xl lg:text-4xl font-light mb-2">Premium Digital Solutions  Agency</h1>
+                        <h1 className="text-2xl md:text-3xl lg:text-4xl font-light mb-2">Grow Your Business with Expert Digital Marketing</h1>
                         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-shadow">
                             We Grow Brands Online
                         </h2>
                         <p className="text-lg md:text-xl text-gray-300">
-                            Custom Websites, Mobile Apps, Games, Branding & Digital Marketing
+                            Custom Websites, Branding & Digital Marketing, Digital solutions
                         </p>
                     </div>
 
@@ -97,29 +98,7 @@ const HeroSection = () => {
                         <span className="ml-2">→</span>
                     </a>
 
-                    {/* Certifications */}
-                    <div className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-12 ">
-                        <div className="flex items-center gap-3">
-                            <img
-                                src="https://www.digitalsilk.com/wp-content/uploads/2022/08/industry-left-logo-left-side.png"
-                                alt="DesignRush logo"
-                                className="w-8 h-11 object-contain"
-                            />
-                            <div>
-                                <p className="text-sm">5 Star DesignRush Reviews</p>
-                                <div className="flex text-yellow-400">
-                                    {[...Array(5)].map((_, i) => (
-                                        <span key={i}>★</span>
-                                    ))}
-                                </div>
-                            </div>
-                        </div>
 
-                        <div className="flex items-center gap-3">
-                            <p className="text-sm">Best Digital Agency of 2024</p>
-
-                        </div>
-                    </div>
                 </div>
             </div>
 

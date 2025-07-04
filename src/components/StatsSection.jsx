@@ -1,115 +1,129 @@
+import React from 'react';
 import { motion } from 'framer-motion';
-import { FiAward, FiStar, FiThumbsUp, FiCheckCircle } from 'react-icons/fi';
 
-const StatsSection = () => {
+const BusinessJourney = () => {
     const stats = [
-        {
-            number: "50+",
-            label: "Projects Completed",
-            icon: <FiCheckCircle className="w-8 h-8" />,
-            color: "from-emerald-400 to-teal-500"
-        },
-        {
-            number: "100%",
-            label: "Client Satisfaction",
-            icon: <FiThumbsUp className="w-8 h-8" />,
-            color: "from-blue-400 to-cyan-500"
-        },
-        {
-            number: "5★",
-            label: "Average Rating",
-            icon: <FiStar className="w-8 h-8" />,
-            color: "from-amber-400 to-orange-500"
-        },
-        {
-            number: "5+",
-            label: "Industry Awards",
-            icon: <FiAward className="w-8 h-8" />,
-            color: "from-purple-400 to-fuchsia-500"
-        }
+        { value: "6+", label: "Years of excellence", color: "from-blue-500 to-cyan-400" },
+        { value: "550+", label: "Clients served", color: "from-purple-500 to-pink-400" },
+        { value: "35+", label: "Industries", color: "from-amber-500 to-orange-400" },
+        { value: "80+", label: "Team experts", color: "from-emerald-500 to-teal-400" }
     ];
 
     return (
-        <div className="relative py-16 sm:py-24 bg-gradient-to-br from-blue-600 to-purple-600 overflow-hidden">
-
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                {/* Section header */}
+        <section className="py-16 md:py-24 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+            <div className="container mx-auto px-4">
+                {/* Header */}
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
                     viewport={{ once: true }}
-                    className="text-center mb-12 lg:mb-16"
+                    className="text-center mb-16"
                 >
-                    <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-                        Our Impact in Numbers
+                    <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                        <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-500">
+                            Our Growth Journey
+                        </span>
                     </h2>
-                    <p className="text-lg sm:text-xl text-blue-100 max-w-2xl mx-auto">
-                        Quantifying our commitment to excellence and client success
+                    <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+                        Committed to excellence for over six years, delivering exceptional results for our clients.
                     </p>
                 </motion.div>
 
-                {/* Stats grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+                {/* Content Grid */}
+                <div className="flex flex-col lg:flex-row gap-12 items-center mb-20">
+                    {/* Text Content */}
+                    <motion.div
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.6, delay: 0.2 }}
+                        viewport={{ once: true }}
+                        className="lg:w-1/2"
+                    >
+                        <h3 className="text-2xl md:text-3xl font-semibold mb-6">
+                            Building meaningful connections through innovation
+                        </h3>
+                        <p className="text-gray-300 mb-6">
+                            Our journey began with a simple mission: to create digital solutions that make a real difference.
+                            Over the years, we've grown into a trusted partner for businesses across multiple industries.
+                        </p>
+                        <p className="text-gray-300">
+                            What sets us apart is our commitment to understanding each client's unique needs and delivering
+                            tailored solutions that drive measurable results.
+                        </p>
+                    </motion.div>
+
+                    {/* Visual Element */}
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.6, delay: 0.4 }}
+                        viewport={{ once: true }}
+                        className="lg:w-1/2 w-full h-64 md:h-80 rounded-xl overflow-hidden relative"
+                    >
+                        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/30 to-purple-900/30 backdrop-blur-sm">
+                            <div className="absolute inset-0 flex items-center justify-center">
+                                <div className="relative">
+                                    <div className="text-center p-6">
+                                        <div className="inline-block text-5xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-500 mb-4">
+                                            6+
+                                        </div>
+                                        <p className="text-lg text-gray-200">Years of experience</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Animated dots */}
+                        {[...Array(20)].map((_, i) => (
+                            <motion.div
+                                key={i}
+                                className="absolute rounded-full bg-blue-400/20"
+                                style={{
+                                    width: `${Math.random() * 20 + 10}px`,
+                                    height: `${Math.random() * 20 + 10}px`,
+                                    top: `${Math.random() * 80 + 10}%`,
+                                    left: `${Math.random() * 80 + 10}%`,
+                                }}
+                                animate={{
+                                    y: [0, (Math.random() - 0.5) * 20],
+                                    opacity: [0.4, 0.8, 0.4],
+                                }}
+                                transition={{
+                                    duration: Math.random() * 4 + 3,
+                                    repeat: Infinity,
+                                    repeatType: 'reverse',
+                                    delay: Math.random() * 2
+                                }}
+                            />
+                        ))}
+                    </motion.div>
+                </div>
+
+                {/* Stats Grid */}
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: 0.6 }}
+                    viewport={{ once: true }}
+                    className="grid grid-cols-2 md:grid-cols-4 gap-6"
+                >
                     {stats.map((stat, index) => (
                         <motion.div
                             key={index}
-                            initial={{ opacity: 0, y: 40 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.6, delay: index * 0.1 }}
-                            viewport={{ once: true }}
-                            whileHover={{ y: -10 }}
-                            className="relative"
+                            whileHover={{ y: -5 }}
+                            className="bg-gray-800/50 p-6 rounded-lg text-center border border-gray-700/30 backdrop-blur-sm hover:border-transparent hover:bg-gradient-to-br hover:shadow-lg transition-all duration-300"
                         >
-                            <div className={`absolute inset-0 rounded-xl bg-gradient-to-br ${stat.color} opacity-20 blur-md`} />
-                            <div className="relative bg-white/10 backdrop-blur-sm rounded-xl p-6 sm:p-8 border border-white/10 overflow-hidden">
-                                <div className="flex items-center justify-center w-16 h-16 mb-4 mx-auto rounded-full bg-white/10">
-                                    <div className="text-white">
-                                        {stat.icon}
-                                    </div>
-                                </div>
-                                <motion.div
-                                    whileHover={{ scale: 1.05 }}
-                                    className="text-center"
-                                >
-                                    <div className="text-4xl sm:text-5xl font-bold text-white mb-2">
-                                        {stat.number}
-                                    </div>
-                                    <div className="text-sm sm:text-base text-blue-100 font-medium">
-                                        {stat.label}
-                                    </div>
-                                </motion.div>
+                            <div className={`text-3xl md:text-4xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r ${stat.color}`}>
+                                {stat.value}
                             </div>
+                            <p className="text-gray-300">{stat.label}</p>
                         </motion.div>
                     ))}
-                </div>
-
-                {/* Floating particles */}
-                {[...Array(15)].map((_, i) => (
-                    <motion.div
-                        key={`particle-${i}`}
-                        animate={{
-                            y: [0, -30, 0],
-                            x: [0, Math.random() * 40 - 20, 0],
-                            opacity: [0.2, 0.6, 0.2]
-                        }}
-                        transition={{
-                            duration: 8 + Math.random() * 10,
-                            repeat: Infinity,
-                            ease: "easeInOut"
-                        }}
-                        className="absolute rounded-full bg-white opacity-30"
-                        style={{
-                            width: `${2 + Math.random() * 3}px`,
-                            height: `${2 + Math.random() * 3}px`,
-                            top: `${Math.random() * 100}%`,
-                            left: `${Math.random() * 100}%`,
-                        }}
-                    />
-                ))}
+                </motion.div>
             </div>
-        </div>
+        </section>
     );
 };
 
-export default StatsSection;
+export default BusinessJourney;

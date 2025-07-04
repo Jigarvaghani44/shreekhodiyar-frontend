@@ -7,6 +7,37 @@ import { Helmet } from 'react-helmet';
 
 const HomeTestimonials = () => {
     const [testimonials, setTestimonials] = useState([]);
+    const [testimonialTemp, setTestimonialTemp] = useState([{
+        _id: "6857d2c857724456389cd20d",
+        name: "Sanjana Reddy",
+        role: "Product Manager, HealthTrack",
+        company: "Vaghani Solutions",
+        companyLogo: "company6.svg",
+        image: "person-photo.jpg",
+        content: "The team's ability to understand our vision and translate it into a high-performing health monitoring solution was exceptional. They were professional, responsive, and delivered with top-tier quality.",
+        rating: 4,
+        project: "Health Monitoring System",
+        date: "2025-06-03",
+        featured: true,
+        status: "published",
+        email: "200303124025@paruluniversity.ac.in",
+        createdAt: "2025-06-22T09:54:16.332Z",
+        updatedAt: "2025-06-25T04:29:37.867Z"
+    }, {
+        _id: "6857d4c381e575543f70c147",
+        name: "bgremove",
+        role: "gh ghg gh",
+        companyLogo: "laptop.webp",
+        image: "laptop.webp",
+        content: "rtgg tth dgh th",
+        rating: 5,
+        project: "hdfh",
+        date: "April 2002",
+        featured: true,
+        status: "published",
+        createdAt: "2025-06-22T10:02:43.264Z",
+        updatedAt: "2025-06-23T04:27:16.812Z"
+    }]);
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isAutoPlaying, setIsAutoPlaying] = useState(true);
     const [touchStart, setTouchStart] = useState(0);
@@ -24,12 +55,13 @@ const HomeTestimonials = () => {
             } catch (err) {
                 console.error('Error fetching testimonials:', err);
                 // setError('Failed to load testimonials');
+                setTestimonials(testimonialTemp);
                 setLoading(false);
             }
         };
 
         fetchTestimonials();
-    }, []);
+    }, [testimonialTemp]);
 
 
     // Auto-advance testimonials

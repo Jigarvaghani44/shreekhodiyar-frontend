@@ -2,8 +2,10 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaShoppingCart, FaMobileAlt, FaPaintBrush, FaRocket, FaShieldAlt, FaChartLine, FaCogs, FaHeadset } from 'react-icons/fa';
 import { FiCheckCircle } from 'react-icons/fi';
-
 import { Helmet } from 'react-helmet';
+import HomeTestimonials from './HomeTestimonials';
+import BusinessStartup from "./businessStartup";
+import OurApproch from "./OurApproach";
 
 const ShopifyDevelopmentPage = () => {
     // Meta data for SEO
@@ -70,55 +72,55 @@ const ShopifyDevelopmentPage = () => {
         }
     ];
 
-    const packages = [
-        {
-            name: "Starter",
-            price: "$1,999",
-            bestFor: "New businesses with basic needs",
-            features: [
-                "Custom Shopify theme development",
-                "10 product pages setup",
-                "Basic SEO configuration",
-                "Mobile-responsive design",
-                "1 revision round",
-                "30-day support"
-            ],
-            cta: "Get Started"
-        },
-        {
-            name: "Professional",
-            price: "$3,999",
-            bestFor: "Growing businesses",
-            features: [
-                "Everything in Starter",
-                "Custom functionality development",
-                "Up to 50 product pages",
-                "Advanced SEO setup",
-                "Conversion optimization",
-                "3 revision rounds",
-                "90-day support",
-                "Basic training"
-            ],
-            cta: "Get Professional",
-            popular: true
-        },
-        {
-            name: "Enterprise",
-            price: "Custom",
-            bestFor: "High-volume stores",
-            features: [
-                "Everything in Professional",
-                "Complete custom solution",
-                "Unlimited products",
-                "ERP/CRM integration",
-                "Custom checkout experience",
-                "Priority support",
-                "Dedicated account manager",
-                "Comprehensive training"
-            ],
-            cta: "Contact Us"
-        }
-    ]
+    // const packages = [
+    //     {
+    //         name: "Starter",
+    //         price: "$1,999",
+    //         bestFor: "New businesses with basic needs",
+    //         features: [
+    //             "Custom Shopify theme development",
+    //             "10 product pages setup",
+    //             "Basic SEO configuration",
+    //             "Mobile-responsive design",
+    //             "1 revision round",
+    //             "30-day support"
+    //         ],
+    //         cta: "Get Started"
+    //     },
+    //     {
+    //         name: "Professional",
+    //         price: "$3,999",
+    //         bestFor: "Growing businesses",
+    //         features: [
+    //             "Everything in Starter",
+    //             "Custom functionality development",
+    //             "Up to 50 product pages",
+    //             "Advanced SEO setup",
+    //             "Conversion optimization",
+    //             "3 revision rounds",
+    //             "90-day support",
+    //             "Basic training"
+    //         ],
+    //         cta: "Get Professional",
+    //         popular: true
+    //     },
+    //     {
+    //         name: "Enterprise",
+    //         price: "Custom",
+    //         bestFor: "High-volume stores",
+    //         features: [
+    //             "Everything in Professional",
+    //             "Complete custom solution",
+    //             "Unlimited products",
+    //             "ERP/CRM integration",
+    //             "Custom checkout experience",
+    //             "Priority support",
+    //             "Dedicated account manager",
+    //             "Comprehensive training"
+    //         ],
+    //         cta: "Contact Us"
+    //     }
+    // ]
     return (
         <>
             <Helmet>
@@ -302,18 +304,23 @@ const ShopifyDevelopmentPage = () => {
                         </div>
                     </div>
                 </section>
+                <BusinessStartup />
+                <OurApproch />
 
+
+
+                <HomeTestimonials />
                 {/* Pricing Packages */}
-                <section className="py-20 bg-white">
+                {/* <section className="py-20 bg-white">
                     <div className=" mx-auto px-6">
                         <div className="text-center mb-16">
                             <h2 className="text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 mb-4">Shopify Development Packages</h2>
                             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                                 Flexible solutions tailored to your business needs and budget
                             </p>
-                        </div>
+                        </div> */}
 
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                             {packages.map((pkg, index) => (
                                 <motion.div
                                     key={index}
@@ -351,9 +358,9 @@ const ShopifyDevelopmentPage = () => {
                                     </div>
                                 </motion.div>
                             ))}
-                        </div>
-                    </div>
-                </section>
+                        </div> */}
+                    {/* </div>
+                </section> */}
 
                 {/* CTA Section */}
                 <section className="py-20 px-6  text-white">

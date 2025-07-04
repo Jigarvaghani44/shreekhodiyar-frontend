@@ -8,6 +8,7 @@ import {
     FaChevronUp
 } from 'react-icons/fa';
 import { FiCheck } from 'react-icons/fi';
+import LocationFooter from './LocationFooter';
 
 
 // import { SiUpwork, SiFiverr } from 'react-icons/si';
@@ -65,12 +66,12 @@ const Footer = () => {
         {
             title: "Services",
             links: [
+                { name: "Degital marketing", url: "/digmarket" },
                 { name: "Web Development", url: "/webdev" },
                 { name: "Mobile Apps", url: "/mobileapp" },
                 { name: "Game Development", url: "/gamedev" },
                 { name: "UI/UX Design", url: "/uiux" },
                 { name: "Shopify Webdevelopment", url: "/shopdev" },
-                // { name: "Degital marketing", url: "/digmarket" },
 
             ]
         },
@@ -88,7 +89,7 @@ const Footer = () => {
             links: [
                 { name: "Blog", url: "/blogs" },
                 // { name: "Case Studies", url: "/casestudy" },
-                // { name: "Support", url: "/support" },
+                { name: "Work", url: "/portfolio" },
                 { name: "Testimonials", url: "/testimonials" }
 
             ]
@@ -98,7 +99,7 @@ const Footer = () => {
     const contactInfo = [
         { icon: <FaMapMarkerAlt />, text: "Blue Stone, 409, Road, near Shyamdham Mandir, Panchvati Scoiety, Nana Varachha, Surat, Gujarat 395006" },
         { icon: <FaPhone />, text: "+91 9574160974" },
-        { icon: <FaEnvelope />, text: "business@unitechnostack.com" },
+        { icon: <FaEnvelope />, text: "business@shreekhodiyartechnostack.com" },
         { icon: <FaClock />, text: "Mon-Fri: 9AM - 6PM" }
     ];
 
@@ -193,48 +194,8 @@ const Footer = () => {
                     {/* Contact info */}
 
                 </div>
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: 0.3 }}
-                    className="w-full bg-gray-800/50 rounded-xl p-6"
-                >
-                    {/* Header with accent bar */}
-                    <div className="flex items-center mb-6">
-                        <div className="h-8 w-1 bg-gradient-to-b from-blue-400 to-purple-500 rounded-full mr-3" />
-                        <h4 className="text-xl font-bold text-white">Contact Information</h4>
-                    </div>
+                <LocationFooter />
 
-                    {/* Contact items in full-width cards */}
-                    <ul className="space-y-3 w-full">
-                        {contactInfo.map((item, index) => (
-                            <motion.li
-                                key={index}
-                                whileHover={{ scale: 1.01 }}
-                                className="w-full"
-                            >
-                                <div className="flex items-center p-4 bg-gray-700/50 hover:bg-gray-700 rounded-lg transition-all w-full">
-                                    <span className="text-blue-400 text-xl mr-4 min-w-[24px]">
-                                        {item.icon}
-                                    </span>
-                                    <span className="text-gray-200 text-sm md:text-base">
-                                        {item.text}
-                                    </span>
-                                </div>
-                            </motion.li>
-                        ))}
-                    </ul>
-
-                    {/* Full-width CTA button */}
-                    <motion.button
-                        whileHover={{ scale: 1.01 }}
-                        whileTap={{ scale: 0.98 }}
-                        className="w-full mt-6 py-4 px-6 rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium flex items-center justify-center shadow-lg hover:shadow-xl transition-all"
-                    >
-                        <FaEnvelope className="mr-3 text-lg" />
-                        <span>Contact Us Now</span>
-                    </motion.button>
-                </motion.div>
                 {/* Newsletter */}
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -298,7 +259,7 @@ const Footer = () => {
                         transition={{ duration: 0.5, delay: 0.5 }}
                         className="text-gray-400 text-sm mb-4 md:mb-0"
                     >
-                        © {new Date().getFullYear()} UniTechnoStack. All rights reserved.
+                        © {new Date().getFullYear()} ShreeKhodiyarTechnoStack. All rights reserved.
                     </motion.p>
 
                     <div className="flex space-x-6">

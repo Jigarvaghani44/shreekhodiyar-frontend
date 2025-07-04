@@ -85,3 +85,10 @@ html {
     scrollbar-width: thin;
     scrollbar-color:rgb(9, 68, 228) #f0f4ff;
 }
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}

@@ -15,24 +15,30 @@ import WebDesignAgencySection from "./WebDesignAgencySection";
 import FAQSection from "./FAQSection";
 import HeroSection from "./HeroSection";
 import GamingHeroSection from "./GamingHeroSection";
+import OurServices from "./OurServices";
+import BusinessStarterGuide from "./businessStartup";
+import OurApproach from "./OurApproach";
 
 function Homepage() {
     return (
         <div className="Homepage">
-            <HeroSection />
+            {/* <HeroSection /> */}
+            <OurServices />
+            <BusinessStarterGuide />
+            <OurApproach />
+            <GamingHeroSection />
             <ScrollAnimationGallery />
             <WhatCanWeDoForYouSection />
-            <CreativeAgenc />
             <SkillsSection />
+            <CreativeAgenc />
             <ServicesSection />
             <WebDesignAgencySection />
             <StatsSection />
             <InfiniteLogoCarousel />
-            <GamingHeroSection />
             {/* <DesignProcess /> */}
             <WhyChooseUs />
             <HomeTestimonials />
-            <PortfolioGallery />
+            {/* <PortfolioGallery /> */}
             <BlogSection />
             <FAQSection />
 

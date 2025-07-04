@@ -1,6 +1,9 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FiArrowRight, FiCheck, FiCode, FiSmartphone, FiCpu, FiBarChart2, FiShare2, FiShoppingCart } from 'react-icons/fi';
+import { FiArrowRight, FiSettings, FiCheck, FiCode, FiSmartphone, FiCpu, FiBarChart2, FiShare2, FiShoppingCart, FiChevronDown } from 'react-icons/fi';
+import HomeTestimonials from './HomeTestimonials';
+import BusinessStartup from "./businessStartup";
+import OurApproch from "./OurApproach";
 
 const ServicesPage = () => {
     const [activeTab, setActiveTab] = useState('web');
@@ -123,14 +126,7 @@ const ServicesPage = () => {
         }
     };
     // Testimonials
-    const testimonials = [
-        {
-            quote: "Their web development service transformed our online presence. Traffic increased by 300%!",
-            author: "Alex Johnson, CEO of TechCorp",
-            role: "SaaS Business"
-        },
-        // More testimonials...
-    ];
+
     const steps = [
         {
             step: "1",
@@ -162,7 +158,7 @@ const ServicesPage = () => {
     return (
         <div className="bg-gradient-to-b from-gray-50 to-white ">
             {/* **Hero Section with Animated Background** */}
-            <section className="relative py-24 px-6 overflow-hidden">
+            <section className="relative h-screen min-h-[600px] py-24 px-6 overflow-hidden flex items-center justify-center px-6 overflow-hidden bg-gray-50">
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
@@ -190,30 +186,36 @@ const ServicesPage = () => {
                 </motion.div>
 
                 {/* Floating background elements */}
-                <div className="absolute inset-0 overflow-hidden opacity-50">
-                    {[...Array(12)].map((_, i) => (
+                {/* Floating Settings Icons Background */}
+                <div className="absolute inset-0 overflow-hidden opacity-1000 pointer-events-none">
+                    {[...Array(50)].map((_, i) => (
                         <motion.div
                             key={i}
                             animate={{
-                                y: [0, 40, 0],
-                                x: [0, Math.random() * 80 - 40, 0],
-                                rotate: [0, Math.random() * 360]
+                                rotate: 360,
+                                y: [0, Math.random() * 60 - 30],
+                                x: [0, Math.random() * 40 - 20]
                             }}
                             transition={{
-                                duration: 15 + Math.random() * 20,
+                                duration: 30 + Math.random() * 30,
                                 repeat: Infinity,
-                                ease: "easeInOut"
+                                ease: "linear",
+                                repeatType: "loop"
                             }}
-                            className="absolute rounded-lg bg-blue-800"
+                            className="absolute text-blue-400/20"
                             style={{
-                                width: `${Math.random() * 200 + 50}px`,
-                                height: `${Math.random() * 200 + 50}px`,
+                                fontSize: `${Math.random() * 24 + 16}px`,
                                 top: `${Math.random() * 100}%`,
                                 left: `${Math.random() * 100}%`,
-                                opacity: Math.random() * 0.3 + 0.1
                             }}
-                        />
+                        >
+                            <FiSettings className="w-full h-full" />
+                        </motion.div>
                     ))}
+                </div>
+                {/* Subtle scroll indicator */}
+                <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+                    <FiChevronDown className="text-gray-400 w-8 h-8" />
                 </div>
             </section>
 
@@ -340,36 +342,9 @@ const ServicesPage = () => {
                     </div>
                 </div>
             </section>
-
-            {/* **Testimonials (Animated Carousel)** */}
-            <section className="py-20 px-6 bg-white">
-                <div className="max-w-5xl mx-auto">
-                    <h2 className="text-3xl font-bold text-center mb-16">What Our Clients Say</h2>
-
-                    <div className="relative h-96 overflow-hidden">
-                        {testimonials.map((testimonial, index) => (
-                            <motion.div
-                                key={index}
-                                initial={{ opacity: 0, x: index % 2 === 0 ? 100 : -100 }}
-                                animate={{ opacity: 1, x: 0 }}
-                                transition={{ duration: 0.6 }}
-                                className="absolute inset-0 flex items-center justify-center"
-                            >
-                                <div className="bg-gray-50 p-8 rounded-xl shadow-lg max-w-2xl mx-auto">
-                                    <p className="text-xl italic mb-6">&ldquo;{testimonial.quote}&ldquo;</p>
-                                    <div className="flex items-center gap-4">
-                                        <div className="w-12 h-12 bg-blue-100 rounded-full" />
-                                        <div>
-                                            <p className="font-bold">{testimonial.author}</p>
-                                            <p className="text-sm text-gray-500">{testimonial.role}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </motion.div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+            <BusinessStartup />
+            <OurApproch />
+            <HomeTestimonials />
 
             {/* **CTA Section (3D Effect)** */}
             <section className="px-6 py-20 mt-0 ">

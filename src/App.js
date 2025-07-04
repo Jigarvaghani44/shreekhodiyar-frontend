@@ -50,6 +50,7 @@ import AdminContact from './admin/Contact';
 import AdminLegal from './admin/Legal';
 import ScrollToTop from './components/ScrollToTop';
 import EmailSubscriptionsPage from './admin/EmailSubscriptionsPage';
+import WhatsAppButton from './components/WatsappButton';
 // import AdminSetting from './admin/Settings';
 
 function App() {
@@ -68,6 +69,7 @@ function App() {
         {/* <ContactPopup /> */}
         <ScrollToTop />
         <CookieConsent />
+        <WhatsAppButton />
         <Routes>
           <Route
             path="/admin/login"
