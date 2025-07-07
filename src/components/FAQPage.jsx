@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiSearch, FiChevronDown, FiMessageSquare } from 'react-icons/fi';
+import { Helmet } from 'react-helmet';
 
 const FAQPage = () => {
     const [activeCategory, setActiveCategory] = useState('all');
@@ -118,6 +119,11 @@ const FAQPage = () => {
     return (
         <div className="bg-gray-50  min-h-screen">
             {/* Hero Section */}
+            <Helmet>
+                <title>FAQs | Digital Services, Pricing & Projects | ShreeKhodiyar Technostack</title>
+                <meta name="description" content="Answers to your most common questions about working with our digital agency for websites, mobile apps, branding, and marketing." />
+            </Helmet>
+
             <section className="bg-gradient-to-r from-blue-600 to-purple-700 text-white py-16 md:py-24 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-70 overflow-hidden">
                     {[...Array(20)].map((_, i) => (

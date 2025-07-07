@@ -96,12 +96,7 @@ const Footer = () => {
         }
     ];
 
-    const contactInfo = [
-        { icon: <FaMapMarkerAlt />, text: "Blue Stone, 409, Road, near Shyamdham Mandir, Panchvati Scoiety, Nana Varachha, Surat, Gujarat 395006" },
-        { icon: <FaPhone />, text: "+91 9574160974" },
-        { icon: <FaEnvelope />, text: "business@shreekhodiyartechnostack.com" },
-        { icon: <FaClock />, text: "Mon-Fri: 9AM - 6PM" }
-    ];
+
 
     const socialLinks = [
         { icon: <FaFacebook />, url: "#", name: "Facebook" },
@@ -131,7 +126,7 @@ const Footer = () => {
                         className="space-y-4"
                     >
                         <h3 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400">
-                            <img src="unitechlogo2.png" alt="UniTechnoStack" />
+                            <img src="shreelogo.png" alt="ShreeKhodiyarTechnoStack" />
                         </h3>
                         <p className="text-gray-300">
                             Transforming ideas into digital reality through innovative technology solutions and creative design.
@@ -291,7 +286,7 @@ const Footer = () => {
                         whileHover={{ y: -3 }}
                         whileTap={{ scale: 0.95 }}
                         aria-label="Scroll to top"
-                        className="mt-4 md:mt-0 flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-lg"
+                        className="mt-4 md:mt-0 flex items-center justify-center w-10 h-10 rounded-full md:mr-20 bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-lg"
                     >
                         <FaChevronUp />
                     </motion.button>

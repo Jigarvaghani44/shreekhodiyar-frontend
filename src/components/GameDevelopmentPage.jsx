@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { FiArrowRight, FiCode, FiCpu, FiServer, FiUsers, FiMonitor, FiSmartphone, FiLayers, FiPlay, FiCheck } from 'react-icons/fi';
 import { useState } from 'react';
+import { Helmet } from 'react-helmet';
 
 const GameDevelopmentPage = () => {
     const technologies = [
@@ -39,6 +40,11 @@ const GameDevelopmentPage = () => {
     return (
         <div className="bg-gray-900 text-white">
             {/* Hero Section */}
+            <Helmet>
+                <title>Game Development Agency | Unity, Mobile & 3D Games | ShreeKhodiyar Technostack</title>
+                <meta name="description" content="We build engaging mobile and 3D games using Unity. From concept to launch, trust our game development experts for immersive experiences." />
+            </Helmet>
+
             <section className="relative py-28 px-4 sm:px-6 overflow-hidden bg-gradient-to-br from-purple-900 to-gray-900">
                 {/* Pixel grid background */}
                 <div className="absolute inset-0 opacity-20">

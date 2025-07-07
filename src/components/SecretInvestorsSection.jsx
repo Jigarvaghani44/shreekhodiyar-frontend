@@ -45,6 +45,14 @@ const SecretInvestors = () => {
             image: "tataethics.jpg",
             description: "Integrity guides every decision we make",
             bgColor: "bg-gradient-to-br from-indigo-50 to-indigo-100"
+        },
+        {
+            id: 6,
+            name: "Leadership",
+            icon: "🛡️",
+            image: "sardarpatelleadership.jpeg",
+            description: "Steadfast leadership that unites and inspires",
+            bgColor: "bg-gradient-to-br from-red-50 to-red-100"
         }
     ];
 
@@ -68,7 +76,7 @@ const SecretInvestors = () => {
                 </motion.div>
 
                 {/* Investors Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-8">
                     {investors.map((investor, index) => (
                         <motion.div
                             key={investor.id}

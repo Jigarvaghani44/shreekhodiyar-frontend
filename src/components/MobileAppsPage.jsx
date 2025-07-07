@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { FiSmartphone, FiCode, FiLayers, FiDatabase, FiCloud, FiCheck, FiArrowRight } from 'react-icons/fi';
 import { useState } from 'react';
+import { Helmet } from 'react-helmet';
 
 const MobileAppsPage = () => {
     const [activePlatform, setActivePlatform] = useState('ios');
@@ -47,6 +48,11 @@ const MobileAppsPage = () => {
 
     return (
         <div className="bg-gradient-to-b from-gray-50 to-white">
+            <Helmet>
+                <title>Mobile App Development Agency | iOS, Android & Hybrid | ShreeKhodiyar Technostack</title>
+                <meta name="description" content="We are a digital agency creating intuitive mobile apps with high performance and ROI. Get Android, iOS, and cross-platform solutions." />
+            </Helmet>
+
             {/* Hero Section */}
             <section className="relative py-24 px-4 sm:px-6 bg-gradient-to-r from-blue-900 to-purple-900 text-white overflow-hidden">
                 {/* Floating app icons */}

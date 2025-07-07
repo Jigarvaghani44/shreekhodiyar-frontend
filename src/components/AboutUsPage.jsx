@@ -12,6 +12,7 @@ import {
     FiClock,
     FiCheck, FiBarChart2, FiHome, FiMap
 } from 'react-icons/fi';
+import { Helmet } from 'react-helmet';
 import SecretInvestorsSection from './SecretInvestorsSection';
 
 // Real company data
@@ -338,6 +339,11 @@ const AboutUsPage = () => {
 
     return (
         <div className="min-h-screen bg-gray-50">
+            <Helmet>
+                <title>About ShreeKhodiyar Technostack | International Digital Agency</title>
+                <meta name="description" content="ShreeKhodiyar Technostack is a global digital agency delivering cutting-edge digital transformation solutions through innovation, tech, and design." />
+            </Helmet>
+
             {/* Hero Section */}
             <section className="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden bg-gradient-to-br from-blue-900 to-purple-900 text-white">
                 <div className="absolute inset-0 overflow-hidden opacity-30">

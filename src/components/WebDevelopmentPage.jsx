@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FiArrowRight, FiCode, FiLayers, FiSmartphone, FiGlobe, FiShield, FiChevronDown } from 'react-icons/fi';
+import { Helmet } from 'react-helmet';
 
 const WebDevelopmentPage = () => {
     const [activeTab, setActiveTab] = useState('frontend');
@@ -50,6 +51,11 @@ const WebDevelopmentPage = () => {
     return (
         <div className="bg-gradient-to-b from-gray-50 to-white">
             {/* Hero Section */}
+            <Helmet>
+                <title>Website Development Agency | Custom Sites & Portals | ShreeKhodiyar Technostack</title>
+                <meta name="description" content="We design and build fast, secure, and scalable websites. Partner with our agency for custom web development and CMS integration." />
+            </Helmet>
+
             <section className="relative py-24 px-4 sm:px-6 bg-gradient-to-r from-blue-900 to-purple-900 text-white overflow-hidden">
                 {/* Floating elements */}
                 <div className="absolute inset-0 opacity-70">

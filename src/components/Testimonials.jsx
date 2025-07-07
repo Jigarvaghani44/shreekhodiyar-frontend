@@ -117,8 +117,8 @@ const TestimonialsPage = () => {
     return (
         <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
             <Helmet>
-                <title>Client Testimonials | Our Success Stories</title>
-                <meta name="description" content="Read what our clients say about working with us. Real testimonials from satisfied customers across various industries." />
+                <title>Client Testimonials | Trusted Global Digital Agency | ShreeKhodiyar Technostack</title>
+                <meta name="description" content="Read what our international clients say about partnering with ShreeKhodiyar Technostack for web, marketing, app, and branding services." />
             </Helmet>
 
             {/* Hero Section */}

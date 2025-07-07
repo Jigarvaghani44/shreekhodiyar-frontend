@@ -9,8 +9,8 @@ import OurApproch from "./OurApproach";
 
 const ShopifyDevelopmentPage = () => {
     // Meta data for SEO
-    const pageTitle = "Premium Shopify Development Services | Custom eCommerce Solutions";
-    const pageDescription = "Expert Shopify development services to build high-converting online stores. Mobile-optimized, SEO-friendly, and custom Shopify solutions for your business.";
+    const pageTitle = "Shopify Development Agency | eCommerce Design & SEO | ShreeKhodiyar Technostack";
+    const pageDescription = "Launch or scale your eCommerce brand with our Shopify agency. Get store setup, custom themes, integrations, and SEO.";
 
     const features = [
         {
@@ -320,7 +320,7 @@ const ShopifyDevelopmentPage = () => {
                             </p>
                         </div> */}
 
-                        {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                             {packages.map((pkg, index) => (
                                 <motion.div
                                     key={index}
@@ -359,7 +359,7 @@ const ShopifyDevelopmentPage = () => {
                                 </motion.div>
                             ))}
                         </div> */}
-                    {/* </div>
+                {/* </div>
                 </section> */}
 
                 {/* CTA Section */}

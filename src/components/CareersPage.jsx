@@ -6,6 +6,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiUsers, FiTarget, FiTrendingUp, FiAward, FiDollarSign, FiClock, FiMapPin, FiCheck, FiChevronDown } from 'react-icons/fi';
+import { Helmet } from 'react-helmet';
 import { FaRocket } from 'react-icons/fa';
 import HomeTestimonials from './HomeTestimonials';
 
@@ -235,6 +236,11 @@ const CareersPage = () => {
     return (
         <div className="bg-gradient-to-b from-gray-50 to-white">
             {/* **Hero Section** */}
+            <Helmet>
+                <title>Careers at a Global Digital Agency | Join ShreeKhodiyar Technostack</title>
+                <meta name="description" content="Build your career with a global digital agency. Explore roles in development, design, digital marketing, and leadership with remote & hybrid options." />
+            </Helmet>
+
             <section className="relative h-screen min-h-[600px] py-24 px-6 overflow-hidden flex items-center justify-center px-6 overflow-hidden bg-gray-50">
                 <div className="max-w-7xl mx-auto text-center relative z-10">
                     <motion.h1

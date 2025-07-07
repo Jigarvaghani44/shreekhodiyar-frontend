@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { FiSend, FiUser, FiMail, FiPhone, FiMessageSquare, FiCheck, FiChevronDown } from 'react-icons/fi';
 import { useState } from 'react';
+import { Helmet } from 'react-helmet';
 
 const QuickEnquiryPage = () => {
     const [formData, setFormData] = useState({
@@ -89,6 +90,11 @@ const QuickEnquiryPage = () => {
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
+            <Helmet>
+                <title>Request a Proposal | ShreeKhodiyar Technostack Digital Agency</title>
+                <meta name="description" content="Get in touch with our digital experts. Request a proposal for custom web development, app design, SEO services, or full digital solutions." />
+            </Helmet>
+
             {/* Hero Header with Floating Elements */}
             <motion.header
                 initial={{ opacity: 0 }}

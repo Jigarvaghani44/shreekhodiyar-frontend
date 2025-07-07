@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unstable-nested-components */
 import React, { useState } from 'react';
 import { motion, useMotionTemplate, useMotionValue, AnimatePresence } from 'framer-motion';
+// import { Helmet } from 'react-helmet';
 
 const InteractiveServices = () => {
     const services = [
@@ -118,6 +119,10 @@ const InteractiveServices = () => {
 
     return (
         <section className="w-full py-20 px-4 sm:px-6 lg:px-8 bg-gray-900">
+
+            <title>Digital Marketing Agency | SEO, Social Media, Ads | ShreeKhodiyar Technostack</title>
+            <meta name="description" content="Boost your brand with a full-service digital marketing agency offering SEO, PPC, social media marketing, and content strategies." />
+
             <div className="max-w-7xl mx-auto">
                 {/* Header */}
                 <div className="text-center mb-16">

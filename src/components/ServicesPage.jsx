@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiArrowRight, FiSettings, FiCheck, FiCode, FiSmartphone, FiCpu, FiBarChart2, FiShare2, FiShoppingCart, FiChevronDown } from 'react-icons/fi';
+import { Helmet } from 'react-helmet';
 import HomeTestimonials from './HomeTestimonials';
 import BusinessStartup from "./businessStartup";
 import OurApproch from "./OurApproach";
@@ -157,6 +158,11 @@ const ServicesPage = () => {
 
     return (
         <div className="bg-gradient-to-b from-gray-50 to-white ">
+            <Helmet>
+                <title>End-to-End Digital Services | Web, SEO, Apps & Branding | ShreeKhodiyar Technostack</title>
+                <meta name="description" content="We are a global digital agency providing full-stack services including SEO, PPC, mobile apps, web development, branding, and UI/UX design." />
+            </Helmet>
+
             {/* **Hero Section with Animated Background** */}
             <section className="relative h-screen min-h-[600px] py-24 px-6 overflow-hidden flex items-center justify-center px-6 overflow-hidden bg-gray-50">
                 <motion.div

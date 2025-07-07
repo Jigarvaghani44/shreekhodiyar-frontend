@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
+
 const DigitalForth = () => {
   // Animation controls
   const controls = useAnimation();
@@ -55,12 +56,10 @@ const DigitalForth = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
       {/* SEO Meta Tags */}
-      <title>Digital Marketing Services | Boost Your Online Presence</title>
-      <meta name="description" content="Professional digital marketing services including SEO, SEM, SMM, and PPC to grow your business online." />
-      <meta name="keywords" content="digital marketing, SEO services, SEM, social media marketing, PPC advertising" />
+   
 
       {/* First Section - What Digital Marketing Can Do */}
-      <motion.section 
+      <motion.section
         className="mb-20 md:mb-32"
         ref={ref}
         initial="hidden"
@@ -69,18 +68,18 @@ const DigitalForth = () => {
       >
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
           {/* Text Content */}
-          <motion.div 
+          <motion.div
             className="lg:w-1/2"
             variants={itemVariants}
           >
-            <motion.h2 
+            <motion.h2
               className="text-3xl md:text-4xl lg:text-5xl font-bold text-blue-800 mb-6"
               whileHover={{ scale: 1.02 }}
             >
               What Digital Marketing Can Do for Your Business
             </motion.h2>
             <div className="h-8" />
-            <motion.p 
+            <motion.p
               className="text-lg md:text-xl text-gray-700 leading-relaxed mb-6"
               variants={itemVariants}
             >
@@ -88,7 +87,7 @@ const DigitalForth = () => {
               Social Media Marketing (SMM), Pay-Per-Click Advertising (PPC), and much more. It's one of the
               most important services you can invest in for the success and long-term growth of your business.
             </motion.p>
-            <motion.p 
+            <motion.p
               className="text-lg md:text-xl text-gray-700 leading-relaxed"
               variants={itemVariants}
             >
@@ -96,11 +95,11 @@ const DigitalForth = () => {
               digital marketing services can generate unbelievable revenue gains, often in a year or less. When done wrong,
               it can cost you thousands of dollars in lost ad spend and bring the wrong people to your website.
             </motion.p>
-            
+
             {/* Animated CTA Button */}
             <motion.button
               className="mt-8 bg-gradient-to-r from-blue-600 to-indigo-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-              whileHover={{ 
+              whileHover={{
                 scale: 1.05,
                 boxShadow: "0 10px 25px -5px rgba(59, 130, 246, 0.4)"
               }}
@@ -110,9 +109,9 @@ const DigitalForth = () => {
               Get Your Free Strategy Session
             </motion.button>
           </motion.div>
-          
+
           {/* Image with hover effect */}
-          <motion.div 
+          <motion.div
             className="lg:w-1/2 relative"
             variants={imageVariants}
           >
@@ -123,15 +122,15 @@ const DigitalForth = () => {
               loading="lazy"
               width="1024"
               height="1024"
-              whileHover={{ 
+              whileHover={{
                 boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)"
               }}
             />
             {/* Decorative element */}
-            <motion.div 
+            <motion.div
               className="absolute -bottom-6 -right-6 w-24 h-24 bg-yellow-400 rounded-lg z-0 hidden lg:block"
               initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ 
+              animate={{
                 opacity: 0.2,
                 scale: 1,
                 transition: {
@@ -152,7 +151,7 @@ const DigitalForth = () => {
       >
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
           {/* Image - Order changes on mobile */}
-          <motion.div 
+          <motion.div
             className="lg:w-1/2 order-2 lg:order-1 relative"
             variants={imageVariants}
           >
@@ -163,15 +162,15 @@ const DigitalForth = () => {
               loading="lazy"
               width="1024"
               height="1024"
-              whileHover={{ 
+              whileHover={{
                 boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)"
               }}
             />
             {/* Decorative element */}
-            <motion.div 
+            <motion.div
               className="absolute -top-6 -left-6 w-24 h-24 bg-blue-400 rounded-lg z-0 hidden lg:block"
               initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ 
+              animate={{
                 opacity: 0.2,
                 scale: 1,
                 transition: {
@@ -181,13 +180,13 @@ const DigitalForth = () => {
               }}
             />
           </motion.div>
-          
+
           {/* Text Content */}
-          <motion.div 
+          <motion.div
             className="lg:w-1/2 order-1 lg:order-2"
             variants={containerVariants}
           >
-            <motion.h2 
+            <motion.h2
               className="text-3xl md:text-4xl lg:text-5xl font-bold text-blue-800 mb-6"
               variants={itemVariants}
               whileHover={{ scale: 1.02 }}
@@ -195,7 +194,7 @@ const DigitalForth = () => {
               What Coalition Technologies Can Do for Your Business
             </motion.h2>
             <div className="h-8" />
-            <motion.p 
+            <motion.p
               className="text-lg md:text-xl text-gray-700 leading-relaxed mb-6"
               variants={itemVariants}
             >
@@ -205,7 +204,7 @@ const DigitalForth = () => {
               campaigns that generate amazing revenue growth for our clients. And we will get amazing results for you too.
             </motion.p>
             <div className="h-8" />
-            <motion.p 
+            <motion.p
               className="text-lg md:text-xl text-gray-700 leading-relaxed mb-8"
               variants={itemVariants}
             >
@@ -215,13 +214,13 @@ const DigitalForth = () => {
               We have generated hundreds of millions of dollars for our clients through our digital marketing
               services and those numbers just keep getting higher.
             </motion.p>
-            
+
             {/* Stats animation */}
-            <motion.div 
+            <motion.div
               className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-8"
               variants={containerVariants}
             >
-              <motion.div 
+              <motion.div
                 className="bg-white p-4 rounded-lg shadow-md border-l-4 border-blue-500"
                 variants={itemVariants}
                 whileHover={{ y: -5 }}
@@ -229,7 +228,7 @@ const DigitalForth = () => {
                 <h3 className="text-3xl font-bold text-blue-800 mb-2">800+</h3>
                 <p className="text-gray-600">Case Studies</p>
               </motion.div>
-              <motion.div 
+              <motion.div
                 className="bg-white p-4 rounded-lg shadow-md border-l-4 border-indigo-500"
                 variants={itemVariants}
                 whileHover={{ y: -5 }}
@@ -237,7 +236,7 @@ const DigitalForth = () => {
                 <h3 className="text-3xl font-bold text-blue-800 mb-2">$100M+</h3>
                 <p className="text-gray-600">Revenue Generated</p>
               </motion.div>
-              <motion.div 
+              <motion.div
                 className="bg-white p-4 rounded-lg shadow-md border-l-4 border-purple-500 hidden md:block"
                 variants={itemVariants}
                 whileHover={{ y: -5 }}

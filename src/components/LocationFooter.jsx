@@ -10,10 +10,10 @@ const LocationFooter = () => {
             status: "active",
             image: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
             details: {
-                address: "123 Tech Park, Bangalore, Karnataka",
+                address: "Blue Stone, 409, Surat, Gujarat",
                 hours: "Mon-Fri: 9AM - 6PM",
-                phone: "+91 1234567890",
-                email: "india@company.com"
+                phone: "+91 9574160974",
+                email: "business@shreekhodiyartech.com"
             }
         },
         {

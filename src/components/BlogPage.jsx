@@ -255,8 +255,8 @@ const BlogPage = () => {
     return (
         <>
             <Helmet>
-                <title>Blog Posts | Your Company</title>
-                <meta name="description" content="Explore our latest blog posts and articles" />
+                <title>Digital Insights & Agency Tips | Blog by ShreeKhodiyar Technostack</title>
+                <meta name="description" content="Explore agency insights, marketing trends, design tips, and global tech news on the ShreeKhodiyar Technostack blog." />
             </Helmet>
 
             <div className="min-h-screen bg-gray-50">

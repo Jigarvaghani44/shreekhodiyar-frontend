@@ -3,10 +3,12 @@
 import { useState, useEffect } from 'react';
 import { FiChevronDown, FiBriefcase, FiGithub, FiAward, FiTrendingUp, FiArrowRight, FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet';
 import axios from 'axios';
 import HomeTestimonials from './HomeTestimonials';
 import BusinessStartup from "./businessStartup";
 import OurApproch from "./OurApproach";
+import CampaignResultsPage from './CampainResultsPage';
 
 const Portfolio = () => {
     // const [activeFilter, setActiveFilter] = useState('all');
@@ -373,6 +375,10 @@ const Portfolio = () => {
 
     return (
         <div className="bg-gray-50">
+            <Helmet>
+                <title>Our Work | Digital Campaigns, Websites & Mobile Apps | ShreeKhodiyar Technostack</title>
+                <meta name="description" content="Discover how our digital agency has empowered startups and enterprises worldwide with impactful branding, development, and marketing projects." />
+            </Helmet>
 
             {/* Hero Section */}
             {/* Minimalist Portfolio Hero */}
@@ -568,7 +574,7 @@ const Portfolio = () => {
                     </button>
                 </div>
             </section>
-
+            <CampaignResultsPage />
             {/* Process Section */}
             <section className="py-5 px-6 bg-white">
                 <div className="max-w-7xl mx-auto">

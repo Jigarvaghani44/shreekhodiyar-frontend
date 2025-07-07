@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { FiArrowRight, FiLayout, FiUsers, FiCode, FiSmartphone, FiMonitor, FiCheck } from 'react-icons/fi';
 import { useState } from 'react';
+import { Helmet } from 'react-helmet';
 
 const UIDesignPage = () => {
     const [activeService, setActiveService] = useState(0);
@@ -42,6 +43,11 @@ const UIDesignPage = () => {
     return (
         <div className="bg-white">
             {/* Hero Section with SEO-rich content */}
+            <Helmet>
+                <title>UI/UX Design Agency | Web & App Design Experts | ShreeKhodiyar Technostack</title>
+                <meta name="description" content="Our agency creates user-first designs with modern UX strategy, intuitive interfaces, and stunning visuals for web and mobile platforms." />
+            </Helmet>
+
             <header className="relative overflow-hidden bg-gradient-to-br from-gray-900 to-blue-600 text-white">
                 {/* Dynamic background elements */}
                 <div className="absolute inset-0 opacity-40">

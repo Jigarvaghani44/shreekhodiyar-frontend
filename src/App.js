@@ -50,7 +50,7 @@ import AdminContact from './admin/Contact';
 import AdminLegal from './admin/Legal';
 import ScrollToTop from './components/ScrollToTop';
 import EmailSubscriptionsPage from './admin/EmailSubscriptionsPage';
-import WhatsAppButton from './components/WatsappButton';
+import WhatsAppButton from './components/WhatsappButtonDesign';
 // import AdminSetting from './admin/Settings';
 
 function App() {
