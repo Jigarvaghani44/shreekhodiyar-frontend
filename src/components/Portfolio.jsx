@@ -512,7 +512,7 @@ const Portfolio = () => {
                             <p className="text-gray-600">Featured Projects</p>
                         </div>
                         <div className="bg-white p-4 rounded-lg shadow-md border border-gray-100 min-w-[150px]">
-                            <p className="text-3xl font-bold text-indigo-600">100%</p>
+                            <p className="text-3xl font-bold text-indigo-600">98%</p>
                             <p className="text-gray-600">Client Satisfaction</p>
                         </div>
                     </div>

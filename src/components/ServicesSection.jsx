@@ -9,128 +9,143 @@ const ServicesSection = () => {
 
     const services = [
         {
-            title: 'Social Media Marketing',
+            title: "Social Media Marketing",
             icon: <FaShareAlt />,
-            description: 'Grow your brand across platforms with strategic content and engagement.',
-            category: 'digital-marketing',
-            keywords: ['social media', 'instagram marketing', 'facebook strategy'],
-            color: 'from-sky-500 to-blue-500'
+            description: "Boost brand awareness and engagement across Instagram, Facebook, and LinkedIn with targeted social media strategies.",
+            category: "digital-marketing",
+            keywords: ["social media marketing", "instagram strategy", "facebook advertising", "linkedin marketing"],
+            color: "from-sky-500 to-blue-500"
         },
         {
-            title: 'Social Media Handling',
+            title: "Social Media Management",
             icon: <FaHandsHelping />,
-            description: 'Professional management of your social profiles to build trust and community.',
-            category: 'digital-marketing',
-            keywords: ['social media management', 'page handling', 'community building'],
-            color: 'from-cyan-500 to-teal-500'
+            description: "Build trust and community with expert handling of your social media profiles and content schedules.",
+            category: "digital-marketing",
+            keywords: ["social media management", "page handling", "community management", "content scheduling"],
+            color: "from-cyan-500 to-teal-500"
         },
         {
-            title: 'Google & Meta Ads',
+            title: "Google & Meta Ads",
             icon: <FaBullhorn />,
-            description: 'Drive traffic and leads with powerful ad campaigns across Google and Meta.',
-            category: 'digital-marketing',
-            keywords: ['google ads', 'meta ads', 'paid ads', 'performance marketing'],
-            color: 'from-yellow-500 to-amber-500'
+            description: "Run high-ROI ad campaigns on Google Search, YouTube, Facebook & Instagram to drive leads and sales.",
+            category: "digital-marketing",
+            keywords: ["google ads", "meta ads", "facebook ads", "instagram ads", "performance marketing"],
+            color: "from-yellow-500 to-amber-500"
         },
         {
-            title: 'Graphics Design',
+            title: "Graphic Design & Branding",
             icon: <FaPalette />,
-            description: 'Visual storytelling through eye-catching and effective designs.',
-            category: 'design',
-            keywords: ['graphic design', 'branding', 'visual identity'],
-            color: 'from-pink-500 to-rose-500'
+            description: "Create memorable visual identities through high-impact graphics, logos, and brand elements.",
+            category: "design",
+            keywords: ["graphic design", "branding", "logo design", "visual identity"],
+            color: "from-pink-500 to-rose-500"
         },
         {
-            title: 'SEO',
+            title: "SEO (Search Engine Optimization)",
             icon: <FaSearch />,
-            description: 'Improve your online visibility with keyword-focused SEO strategies.',
-            category: 'digital-marketing',
-            keywords: ['search engine optimization', 'on-page SEO', 'organic traffic'],
-            color: 'from-green-500 to-emerald-500'
+            description: "Improve organic rankings and drive traffic with advanced on-page and off-page SEO strategies.",
+            category: "digital-marketing",
+            keywords: ["search engine optimization", "on-page SEO", "link building", "organic traffic", "technical SEO"],
+            color: "from-green-500 to-emerald-500"
         },
         {
-            title: 'Performance Marketing',
+            title: "Performance Marketing",
             icon: <FaChartLine />,
-            description: 'Maximize ROI with data-driven advertising and conversion optimization.',
-            category: 'digital-marketing',
-            keywords: ['ROI marketing', 'data-driven ads', 'conversion strategy'],
-            color: 'from-orange-500 to-red-500'
+            description: "Maximize return on ad spend through data-driven campaigns, A/B testing, and funnel optimization.",
+            category: "digital-marketing",
+            keywords: ["ROI marketing", "conversion optimization", "data-driven campaigns", "paid performance marketing"],
+            color: "from-orange-500 to-red-500"
         },
-
         {
-            title: 'Web Development',
+            title: "Web Development",
             icon: <FaCloud />,
-            description: 'Responsive, high-performance websites and web applications.',
-            category: 'development',
-            keywords: ['web development', 'responsive design', 'web applications'],
-            color: 'from-blue-600 to-indigo-600'
+            description: "Build fast, responsive websites and scalable web applications using modern technologies.",
+            category: "development",
+            keywords: ["web development", "responsive website", "web applications", "frontend backend solutions"],
+            color: "from-blue-600 to-indigo-600"
         },
         {
-            title: 'Mobile Development',
+            title: "Mobile App Development",
             icon: <FaCogs />,
-            description: 'Build seamless mobile apps for iOS and Android platforms.',
-            category: 'development',
-            keywords: ['mobile app development', 'iOS apps', 'Android apps'],
-            color: 'from-blue-500 to-cyan-500'
+            description: "Launch cross-platform mobile apps for iOS & Android with seamless performance and UX.",
+            category: "development",
+            keywords: ["mobile app development", "iOS apps", "Android apps", "cross-platform apps"],
+            color: "from-blue-500 to-cyan-500"
         },
         {
-            title: 'Shopify Web Development',
+            title: "Shopify Web Development",
             icon: <FaShoppingCart />,
-            description: 'Custom Shopify stores that are fast, responsive, and designed to convert visitors into customers.',
-            category: 'development',
-            keywords: ['shopify development', 'ecommerce website', 'shopify theme customization', 'online store'],
-            color: 'from-purple-500 to-pink-500'
+            description: "Create high-converting, fully customizable Shopify stores optimized for global e-commerce growth.",
+            category: "development",
+            keywords: ["shopify development", "ecommerce website", "shopify store customization", "online shop"],
+            color: "from-purple-500 to-pink-500"
         },
         {
-            title: 'MVP & Product Development',
+            title: "MVP & Product Development",
             icon: <FaUsers />,
-            description: 'Bring your ideas to life with rapid MVP development.',
-            category: 'development',
-            keywords: ['MVP development', 'product development', 'rapid prototyping'],
-            color: 'from-amber-500 to-orange-500'
+            description: "Bring your ideas to life quickly with scalable MVPs and agile product development workflows.",
+            category: "development",
+            keywords: ["MVP development", "product development", "startup launch", "rapid prototyping"],
+            color: "from-amber-500 to-orange-500"
         },
         {
-            title: 'Prototyping & UI/UX',
+            title: "UI/UX & Prototyping",
             icon: <FaDrawPolygon />,
-            description: 'Craft stunning user experiences and intuitive interfaces.',
-            category: 'design',
-            keywords: ['UI/UX design', 'prototyping', 'user experience'],
-            color: 'from-fuchsia-500 to-purple-500'
+            description: "Design intuitive, engaging interfaces and prototypes focused on user experience and usability.",
+            category: "design",
+            keywords: ["UI design", "UX research", "interactive prototyping", "user experience design"],
+            color: "from-fuchsia-500 to-purple-500"
         },
         {
-            title: 'Quality Assurance',
+            title: "Quality Assurance & Testing",
             icon: <FaShapes />,
-            description: 'Ensure flawless performance with rigorous testing and QA.',
-            category: 'consulting',
-            keywords: ['QA testing', 'quality assurance', 'software testing'],
-            color: 'from-emerald-500 to-teal-500'
+            description: "Ensure software reliability and performance through manual & automated QA testing processes.",
+            category: "consulting",
+            keywords: ["QA testing", "software quality assurance", "bug fixing", "automated testing"],
+            color: "from-emerald-500 to-teal-500"
         },
         {
-            title: 'Innovation Consulting',
+            title: "Digital Innovation Consulting",
             icon: <FaCube />,
-            description: 'Strategic guidance for innovative digital solutions.',
-            category: 'consulting',
-            keywords: ['tech consulting', 'innovation strategy', 'digital transformation'],
-            color: 'from-indigo-500 to-violet-500'
+            description: "Leverage digital transformation strategies to innovate business models and operational workflows.",
+            category: "consulting",
+            keywords: ["digital transformation", "tech consulting", "innovation strategy", "business automation"],
+            color: "from-indigo-500 to-violet-500"
         },
-
         {
-            title: 'ERP & CRM Solutions (Python/Django)',
+            title: "ERP & CRM Development (Django)",
             icon: <FaDatabase />,
-            description: 'Custom ERP and CRM systems built with Django for seamless business operations.',
-            category: 'software-solutions',
-            keywords: ['ERP system', 'CRM software', 'django development', 'business automation'],
-            color: 'from-indigo-500 to-blue-500'
+            description: "Build scalable ERP and CRM solutions using Python/Django for efficient business management.",
+            category: "software-solutions",
+            keywords: ["ERP development", "CRM system", "Django development", "business automation tools"],
+            color: "from-indigo-500 to-blue-500"
         },
         {
-            title: 'Software Solutions',
+            title: "Custom Software Solutions",
             icon: <FaCode />,
-            description: 'Tailored software applications to streamline and automate your business processes.',
-            category: 'software-solutions',
-            keywords: ['custom software', 'business software', 'software development'],
-            color: 'from-violet-500 to-purple-500'
+            description: "Tailor-made software products to digitize, automate, and streamline your operations.",
+            category: "software-solutions",
+            keywords: ["custom software", "enterprise software", "business applications", "software development services"],
+            color: "from-violet-500 to-purple-500"
+        },
+        {
+            title: '2D/3D Gaming Apps',
+            icon: <FaGamepad />,
+            description: 'Engaging mobile and desktop games built with immersive 2D and 3D environments.',
+            category: 'development',
+            keywords: ['2D game development', '3D game development', 'Unity game apps', 'mobile game development', 'iOS Android games'],
+            color: 'from-red-500 to-pink-500'
+        },
+        {
+            title: 'AR/VR Gaming Apps',
+            icon: <FaVrCardboard />,
+            description: 'Next-gen augmented and virtual reality gaming experiences for mobile and wearable devices.',
+            category: 'development',
+            keywords: ['AR gaming', 'VR gaming', 'augmented reality apps', 'virtual reality game development', 'interactive AR/VR experiences'],
+            color: 'from-teal-500 to-cyan-500'
         }
     ];
+
 
     useEffect(() => {
         const checkMobile = () => setIsMobile(window.innerWidth < 1024);
@@ -173,7 +188,7 @@ const ServicesSection = () => {
                         Comprehensive Digital Solutions
                     </h1>
                     <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
-                        End-to-end services to transform your digital presence
+                        From strategy and design to development and marketing, we offer end-to-end digital solutions including web & mobile app development, e-commerce platforms, SEO, and performance-driven digital marketing—empowering brands across <strong>India</strong>, <strong>USA</strong>, <strong>Australia</strong>, and <strong>Europe</strong> to grow and scale online.
                     </p>
                 </motion.div>
 
@@ -183,9 +198,9 @@ const ServicesSection = () => {
                         <div className="w-1/2 pr-8 sticky top-24 h-[calc(100vh-8rem)]">
                             <div className="h-full flex flex-col justify-center">
                                 <p className="text-lg text-gray-300 mb-8">
-                                    we help brands thrive online with performance-driven digital marketing strategies. From SEO and social media to paid ads and content creation — we build custom campaigns that drive real results. We provide complete digital solutions tailored to your business needs,
-                                    from initial concept to final implementation and beyond.
+                                    At <strong>ShreeKhodiyar TechnoStack</strong>, we empower brands to thrive online with performance-driven digital marketing solutions. From SEO services and social media marketing to Google Ads, content strategy, and conversion optimization — our custom campaigns are designed to deliver measurable business growth. We offer complete digital transformation services, tailored to your unique goals — from strategic planning and development to execution and long-term scaling.
                                 </p>
+
                                 <div className="relative rounded-xl  aspect-video   overflow-visible ">
                                     <div className="absolute inset-0   flex items-center justify-center ">
                                         <img className='w-full' src="https://www.digitalsilk.com/wp-content/uploads/2024/09/Explore-Our-Web-Design-Services-1.png" alt="UniTechnoStack" />

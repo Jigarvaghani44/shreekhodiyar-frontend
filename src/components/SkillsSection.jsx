@@ -29,67 +29,132 @@ const SkillsSection = () => {
         {
             title: "Digital Marketing",
             icon: <FiTrendingUp />,
-            skills: ["SEO Optimization", "PPC Campaigns", "Social Media Marketing", "Content Strategy", "Email Marketing", "Analytics"],
-            description: "Data-driven marketing strategies that deliver measurable results",
+            skills: [
+                "SEO Optimization",
+                "PPC Campaigns",
+                "Social Media Marketing",
+                "Content Strategy",
+                "Email Marketing",
+                "Marketing Analytics"
+            ],
+            description: "Result-oriented digital marketing services including SEO, paid advertising, and social growth strategies for global reach.",
             color: "from-purple-600 to-indigo-600"
         },
         {
             title: "Web Development",
             icon: <FiCode />,
-            skills: ["React.js", "Next.js", "Node.js", "Tailwind CSS", "TypeScript", "Headless CMS"],
-            description: "Modern web solutions for optimal performance and user experience",
+            skills: [
+                "React.js Development",
+                "Next.js Framework",
+                "Node.js APIs",
+                "Tailwind CSS Styling",
+                "TypeScript Programming",
+                "Headless CMS Integration",
+                "python",
+                "django Framework",
+                "Fast api",
+                "ASP.net",
+                "Java Sprimgboot"
+            ],
+            description: "High-performance, SEO-optimized websites and apps using modern frameworks for global scalability.",
             color: "from-blue-600 to-cyan-600"
         },
         {
             title: "E-Commerce Solutions",
             icon: <FiShoppingCart />,
-            skills: ["Shopify Development", "WooCommerce", "Payment Gateways", "Cart Optimization", "Product Feeds", "Custom Apps"],
-            description: "Complete e-commerce solutions to boost your online sales",
+            skills: [
+                "Shopify Store Development",
+                "WooCommerce Integration",
+                "Secure Payment Gateways",
+                "Cart Optimization",
+                "Product Feed Management",
+                "Custom E-commerce Apps"
+            ],
+            description: "End-to-end eCommerce development that increases conversions, enhances UX, and scales across regions.",
             color: "from-pink-600 to-rose-600"
         },
         {
-            title: "SEO & Content",
+            title: "SEO & Content Marketing",
             icon: <FiGlobe />,
-            skills: ["Keyword Research", "On-Page SEO", "Technical SEO", "Content Creation", "Link Building", "Local SEO"],
-            description: "Organic growth strategies to increase visibility and traffic",
+            skills: [
+                "Keyword Research Tools",
+                "On-Page SEO Techniques",
+                "Technical SEO Audits",
+                "Content Writing & Strategy",
+                "Backlink Building",
+                "Local SEO Optimization"
+            ],
+            description: "Organic growth strategies that increase your Google visibility, search ranking, and inbound traffic.",
             color: "from-green-600 to-emerald-600"
         },
         {
             title: "Mobile Solutions",
             icon: <FiSmartphone />,
-            skills: ["Responsive Design", "PWA Development", "React Native", "App Store Optimization", "Mobile UX", "AMP"],
-            description: "Mobile-first approaches for today's on-the-go audiences",
+            skills: [
+                "Mobile-Responsive Design",
+                "Progressive Web App (PWA)",
+                "React Native App Development",
+                "App Store Optimization (ASO)",
+                "Mobile User Experience",
+                "Accelerated Mobile Pages (AMP)",
+                "Ar/Vr Gaming apps",
+                "2D/3D Gaming apps",
+                "Unity games"
+            ],
+            description: "Build mobile-first apps that perform seamlessly on iOS and Android with intuitive UX and fast load times.",
             color: "from-yellow-600 to-amber-600"
         },
         {
             title: "Backend Systems",
             icon: <FiServer />,
-            skills: ["API Development", "Database Design", "Cloud Functions", "Authentication", "Server Optimization", "Microservices"],
-            description: "Robust backend architectures to power your digital presence",
+            skills: [
+                "REST API Development",
+                "Database Architecture",
+                "Cloud Functions (AWS/GCP)",
+                "JWT Authentication",
+                "Performance Tuning",
+                "Microservices Architecture",
+
+            ],
+            description: "Scalable and secure server-side solutions that support modern web and mobile applications.",
             color: "from-red-600 to-orange-600"
         },
-        {
-            title: "Data & Analytics",
-            icon: <FiDatabase />,
-            skills: ["Google Analytics", "Data Visualization", "Conversion Tracking", "KPI Dashboards", "Heatmaps", "A/B Testing"],
-            description: "Actionable insights to inform your marketing decisions",
-            color: "from-indigo-600 to-violet-600"
-        },
+
         {
             title: "Cloud Solutions",
             icon: <FiCloud />,
-            skills: ["AWS", "Google Cloud", "Serverless", "CDN Setup", "Hosting Optimization", "CI/CD Pipelines"],
-            description: "Scalable infrastructure for your growing business needs",
+            skills: [
+                "AWS Cloud Services",
+                "Google Cloud Platform (GCP)",
+                "Serverless Architecture",
+                "Global CDN Integration",
+                "High-Speed Hosting",
+                "CI/CD Deployment Pipelines"
+            ],
+            description: "Deploy scalable and secure infrastructure with leading cloud platforms for global availability.",
             color: "from-cyan-600 to-sky-600"
         },
         {
-            title: "Full Stack Solutions",
+            title: "Full Stack Development",
             icon: <FiLayers />,
-            skills: ["MERN Stack", "Jamstack", "Headless Commerce", "CMS Integration", "Custom APIs", "Third-party Integrations"],
-            description: "End-to-end digital solutions tailored to your requirements",
+            skills: [
+                "MERN Stack (MongoDB, Express, React, Node)",
+                "Jamstack Architecture",
+                "Headless CMS (Strapi, Sanity)",
+                "Custom API Integration",
+                "Third-Party Integrations",
+                "End-to-End Application Development",
+                "python",
+                "django Framework",
+                "Fast api",
+                "ASP.net",
+                "Java Sprimgboot"
+            ],
+            description: "Comprehensive full-stack development services designed for high-performance digital products.",
             color: "from-fuchsia-600 to-purple-600"
         }
     ];
+
 
     const currentCategory = categories[activeCategory] || categories[0];
 

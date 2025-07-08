@@ -13,57 +13,42 @@ const ShreeKhodiyarTechnoStack = () => {
 
     const services = [
         {
-            title: "Digital Marketing",
+            title: "Digital Marketing Services",
             icon: "📈",
-            description: "Data-driven campaigns for maximum ROI",
+            description: "Result-oriented digital marketing campaigns to increase traffic, leads, and revenue worldwide.",
             features: [
-                "SEO & Content Marketing",
-                "Social Media Management",
-                "PPC & Performance Marketing",
-                "Email Marketing Automation"
+                "SEO & Content Marketing for Organic Growth",
+                "Social Media Management (Facebook, Instagram, LinkedIn)",
+                "Google Ads & Performance Marketing (PPC)",
+                "Email Marketing & Automation for Lead Nurturing"
             ]
         },
         {
-            title: "Web Development",
+            title: "Web Development Services",
             icon: "🌐",
-            description: "High-performance websites & web apps",
+            description: "Custom, fast, and SEO-optimized websites built to scale your brand and increase conversions.",
             features: [
-                "Custom CMS Development",
-                "E-Commerce Solutions",
-                "Responsive Design",
-                "API Integrations"
+                "Custom CMS Development (WordPress, Headless CMS)",
+                "E-Commerce Solutions (Shopify, WooCommerce)",
+                "Mobile-Responsive & UX-Centric Design",
+                "API Integrations & Third-Party Services"
             ]
         },
-        // {
-        //     title: "Mobile Apps",
-        //     icon: "📱",
-        //     description: "Cross-platform mobile solutions",
-        //     features: [
-        //         "iOS & Android Development",
-        //         "React Native Apps",
-        //         "App Store Optimization",
-        //         "Enterprise Mobility"
-        //     ]
-        // },
         {
-            title: "Software Solutions",
+            title: "Custom Software Solutions",
             icon: "💻",
-            description: "Custom business applications",
+            description: "Tailored software applications built for scalability, automation, and digital transformation.",
             features: [
-                "ERP/CRM Development",
-                "Cloud Solutions",
-                "AI & ML Integration",
-                "Legacy System Modernization"
+                "ERP & CRM Development (Python/Django, Node.js)",
+                "Cloud-Based Web & Desktop Solutions",
+                "AI & Machine Learning Integration",
+                "Legacy System Modernization & Migration"
             ]
         }
     ];
 
-    const stats = [
-        { value: "50+", label: "Projects Completed" },
-        { value: "100%", label: "Client Retention" },
-        { value: "3+", label: "Years Experience" },
-        { value: "50+", label: "Happy Clients" }
-    ];
+
+
 
     return (
         <div className="bg-white overflow-hidden">
@@ -156,68 +141,132 @@ const ShreeKhodiyarTechnoStack = () => {
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: 0.8 }}
                     viewport={{ once: true }}
-                    className="mb-20"
+                    className="py-16 px-4 sm:px-6 lg:px-8"
                 >
-                    <div className="bg-white rounded-2xl p-8 md:p-12 shadow-xl">
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                            <div>
-                                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                                    About <span className="text-blue-600">ShreeKhodiyar TechnoStack</span>
-                                </h2>
-                                <div className="prose text-gray-600 max-w-none">
-                                    <p>
-                                        <strong>ShreeKhodiyarTechnoStack</strong> is a premier digital solutions provider specializing in comprehensive <strong>digital marketing services</strong> and <strong>custom software development</strong>. We combine technical expertise with creative marketing strategies to deliver measurable business results.
-                                    </p>
-                                    <p>
-                                        Our team of certified professionals stays ahead of industry trends to provide cutting-edge solutions in <strong>SEO, social media marketing, web development, mobile applications</strong>, and <strong>enterprise software solutions</strong>.
-                                    </p>
-                                    <p>
-                                        We pride ourselves on building long-term partnerships with our clients, helping them navigate the digital landscape with confidence and achieve sustainable growth.
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="relative">
-                                <div
-                                    className="aspect-video bg-gray-900 rounded-xl overflow-hidden shadow-lg cursor-pointer"
-                                    onClick={toggleVideo}
-                                    onMouseEnter={() => setIsVideoHovered(true)}
-                                    onMouseLeave={() => setIsVideoHovered(false)}
-                                >
-                                    <div className="absolute inset-0 bg-gray-800 flex items-center justify-center">
-                                        <AnimatePresence>
-                                            {!videoPlaying && (
-                                                <motion.div
-                                                    initial={{ opacity: 0, scale: 0.8 }}
-                                                    animate={{
-                                                        opacity: isVideoHovered ? 1 : 0.8,
-                                                        scale: isVideoHovered ? 1.1 : 1
-                                                    }}
-                                                    exit={{ opacity: 0 }}
-                                                    transition={{ duration: 0.3 }}
-                                                    className="absolute inset-0 flex items-center justify-center"
-                                                >
-                                                    <div className="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center text-white shadow-lg transform transition-all duration-300 hover:scale-110">
-                                                        <FiPlay className="text-2xl ml-1" />
-                                                    </div>
-                                                </motion.div>
-                                            )}
-                                        </AnimatePresence>
+                    <div className="max-w-7xl mx-auto">
+                        <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
+                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
+                                {/* Text Content */}
+                                <div className="p-8 md:p-12 order-2 lg:order-1">
+                                    <div className="max-w-lg mx-auto lg:mx-0">
+                                        <div className="flex items-center mb-6">
+                                            <div className="h-1 w-12 bg-blue-600 rounded-full mr-4" />
+                                            <h2 className="text-sm font-semibold tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 uppercase">
+                                                About Us
+                                            </h2>
+                                        </div>
 
-                                        {videoPlaying && (
-                                            <div className="absolute inset-0 flex items-center justify-center bg-black">
-                                                <video
-                                                    controls
-                                                    autoPlay
-                                                    className="w-full h-full object-cover"
-                                                >
-                                                    <source
-                                                        src="/company-showreel.mp4"
-                                                        type="video/mp4"
-                                                    />
-                                                    Your browser does not support the video tag.
-                                                </video>
+                                        <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">
+                                            Transforming Businesses Through <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">Digital Excellence</span>
+                                        </h3>
+
+                                        <div className="space-y-6 text-gray-600">
+                                            <p className="text-lg leading-relaxed">
+                                                <strong className="text-gray-800">ShreeKhodiyar TechnoStack</strong> is a premier digital solutions provider specializing in  custom software development and data-driven marketing strategies. We combine technical expertise with creative vision to deliver measurable business outcomes.
+                                            </p>
+
+                                            <div className="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500">
+                                                <p className="text-blue-800">
+                                                    "Our mission is to empower businesses with innovative digital solutions that drive growth and create competitive advantages in today's fast-paced market."
+                                                </p>
                                             </div>
-                                        )}
+
+                                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                                <div className="flex items-start">
+                                                    <div className="flex-shrink-0 mt-1">
+                                                        <svg className="h-5 w-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                                                        </svg>
+                                                    </div>
+                                                    <p className="ml-3 text-gray-600">
+                                                        <span className="font-medium text-gray-800">50+</span> Successful Projects
+                                                    </p>
+                                                </div>
+                                                <div className="flex items-start">
+                                                    <div className="flex-shrink-0 mt-1">
+                                                        <svg className="h-5 w-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                                                        </svg>
+                                                    </div>
+                                                    <p className="ml-3 text-gray-600">
+                                                        <span className="font-medium text-gray-800">15+</span> Industry Verticals
+                                                    </p>
+                                                </div>
+                                                <div className="flex items-start">
+                                                    <div className="flex-shrink-0 mt-1">
+                                                        <svg className="h-5 w-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                                                        </svg>
+                                                    </div>
+                                                    <p className="ml-3 text-gray-600">
+                                                        <span className="font-medium text-gray-800">98%</span> Client Satisfaction
+                                                    </p>
+                                                </div>
+                                                <div className="flex items-start">
+                                                    <div className="flex-shrink-0 mt-1">
+                                                        <svg className="h-5 w-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                                                        </svg>
+                                                    </div>
+                                                    <p className="ml-3 text-gray-600">
+                                                        <span className="font-medium text-gray-800">3+</span> Years Experience
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* Video/Image Content */}
+                                <div className="relative order-1 lg:order-2">
+                                    <div className="aspect-w-16 aspect-h-9 w-full h-full min-h-[400px] lg:min-h-full">
+                                        <div
+                                            className="absolute inset-0 bg-gradient-to-br from-blue-900 to-blue-700 flex items-center justify-center cursor-pointer"
+                                            onClick={toggleVideo}
+                                            onMouseEnter={() => setIsVideoHovered(true)}
+                                            onMouseLeave={() => setIsVideoHovered(false)}
+                                        >
+                                            {!videoPlaying ? (
+                                                <>
+                                                    <AnimatePresence>
+                                                        <motion.div
+                                                            initial={{ opacity: 0, scale: 0.8 }}
+                                                            animate={{
+                                                                opacity: isVideoHovered ? 1 : 0.9,
+                                                                scale: isVideoHovered ? 1.05 : 1
+                                                            }}
+                                                            exit={{ opacity: 0 }}
+                                                            transition={{ duration: 0.3 }}
+                                                            className="absolute inset-0 flex items-center justify-center"
+                                                        >
+                                                            <div className="absolute inset-0 bg-black opacity-30" />
+                                                            <div className="relative z-10 w-20 h-20 bg-white bg-opacity-90 rounded-full flex items-center justify-center text-blue-600 shadow-xl transform transition-all duration-300 hover:scale-110">
+                                                                <FiPlay className="text-2xl ml-1" />
+                                                            </div>
+                                                        </motion.div>
+                                                    </AnimatePresence>
+                                                    <div className="absolute bottom-6 left-6 z-10">
+                                                        <span className="inline-block px-3 py-1 rounded-full text-sm font-medium text-white bg-black bg-opacity-50">
+                                                            Watch Our Story
+                                                        </span>
+                                                    </div>
+                                                </>
+                                            ) : (
+                                                <div className="absolute inset-0 flex items-center justify-center bg-black">
+                                                    <video
+                                                        controls
+                                                        autoPlay
+                                                        className="w-full object-cover"
+                                                    >
+                                                        <source
+                                                            src="https://www.digitalsilk.com/wp-content/uploads/2025/04/Digital-Silk-Showreel-Video.mp4"
+                                                            type="video/mp4"
+                                                        />
+                                                        Your browser does not support the video tag.
+                                                    </video>
+                                                </div>
+                                            )}
+                                        </div>
                                     </div>
                                 </div>
                             </div>

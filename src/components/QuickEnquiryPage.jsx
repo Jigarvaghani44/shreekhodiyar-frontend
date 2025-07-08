@@ -19,6 +19,7 @@ const QuickEnquiryPage = () => {
     const [activeAccordion, setActiveAccordion] = useState(null);
 
     const services = [
+        "Digital Marketing",
         "Web Development",
         "Mobile App Development",
         "UI/UX Design",
@@ -372,7 +373,7 @@ const QuickEnquiryPage = () => {
                                         </div>
                                         <div>
                                             <p className="text-sm text-gray-500">Email us at</p>
-                                            <p className="text-gray-800 font-medium">contact@unitechnostack.com</p>
+                                            <p className="text-gray-800 font-medium">contact@shreekhodiyartech.com</p>
                                         </div>
                                     </div>
                                     <div className="flex items-start">
@@ -380,8 +381,8 @@ const QuickEnquiryPage = () => {
                                             <FiPhone className="text-blue-600 text-xl" />
                                         </div>
                                         <div>
-                                            <p className="text-sm text-gray-500">Call us at</p>
-                                            <p className="text-gray-800 font-medium">+91 9574160974</p>
+                                            <p className="text-sm text-gray-500">Whatsapp Message us at</p>
+                                            <p className="text-gray-800 font-medium">+91 95741 60974</p>
                                         </div>
                                     </div>
                                     <div className="pt-4 border-t border-gray-100">

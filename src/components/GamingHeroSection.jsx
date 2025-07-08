@@ -8,71 +8,72 @@ const ProductCentricBranding = () => {
     // Revised branding process starting with product analysis
     const brandingProcess = [
         {
-            title: "Product Deep Dive",
+            title: "Product Deep Dive & Value Analysis",
             icon: <FiBox className="text-2xl" />,
-            description: "We start by thoroughly understanding your product's core value",
+            description: "Uncover your product’s core value with in-depth feature analysis, USP extraction, user benefit mapping, and competitor benchmarking.",
             keyActions: [
-                "Product feature analysis",
-                "Unique selling proposition extraction",
-                "User benefit mapping",
-                "Competitive product comparison"
+                "Feature and functionality audit",
+                "Unique selling proposition definition",
+                "User benefit mapping for persona targeting",
+                "Competitive product comparison and market gap analysis"
             ],
-            outcome: "Clear product-market fit understanding",
+            outcome: "Crystal‑clear product-market fit and value proposition",
             color: "from-blue-500 to-blue-600"
         },
         {
-            title: "Market Positioning",
+            title: "Strategic Market Positioning",
             icon: <FiSearch className="text-2xl" />,
-            description: "Determining where your product fits in the competitive landscape",
+            description: "Position your brand precisely with target audience insights, pricing strategy, competitor gap research, and personality alignment.",
             keyActions: [
-                "Target audience identification",
-                "Competitive gap analysis",
-                "Price positioning strategy",
-                "Brand personality alignment"
+                "Target audience segmentation (India, USA, Australia, Europe)",
+                "Competitive gap and SWOT analysis",
+                "Price positioning and value comparison",
+                "Brand personality and tone of voice alignment"
             ],
-            outcome: "Strategic market position blueprint",
+            outcome: "Data-driven market positioning blueprint for global expansion",
             color: "from-purple-500 to-purple-600"
         },
         {
-            title: "Brand Foundation",
+            title: "Brand Foundation & Messaging Strategy",
             icon: <FiLayers className="text-2xl" />,
-            description: "Building the strategic core of your brand",
+            description: "Define your brand’s essence with promise formulation, messaging pillars, archetype mapping, and tone guidelines.",
             keyActions: [
-                "Brand promise formulation",
-                "Core messaging development",
-                "Brand archetype identification",
-                "Tone of voice definition"
+                "Brand promise and value statement creation",
+                "Core messaging development for multi-channel use",
+                "Brand archetype identification to guide perception",
+                "Consistent tone-of-voice definition for global markets"
             ],
-            outcome: "Comprehensive brand strategy document",
+            outcome: "Robust brand strategy document ready for execution",
             color: "from-teal-500 to-teal-600"
         },
         {
-            title: "Visual Identity",
+            title: "Visual Identity & Design System",
             icon: <FiTarget className="text-2xl" />,
-            description: "Translating strategy into distinctive visual language",
+            description: "Transform your brand into a visual powerhouse with logos, color psychology, typography, and storytelling assets.",
             keyActions: [
-                "Logo design inspired by product benefits",
-                "Color psychology application",
-                "Typography system creation",
-                "Visual storytelling elements"
+                "Logo design reflecting core product benefits",
+                "Color palette selection using color psychology",
+                "Typography system optimized for web and mobile",
+                "Visual storytelling and brand graphic creation"
             ],
-            outcome: "Complete brand identity system",
+            outcome: "Comprehensive brand identity and style guidelines",
             color: "from-orange-500 to-orange-600"
         },
         {
-            title: "Go-To-Market",
+            title: "Go-To-Market & Launch Strategy",
             icon: <FiUsers className="text-2xl" />,
-            description: "Launching your product with compelling branding",
+            description: "Launch confidently with packaging, digital presence, campaign planning, and brand governance tools.",
             keyActions: [
-                "Packaging design (if physical product)",
-                "Digital presence development",
-                "Launch campaign strategy",
-                "Brand guidelines creation"
+                "Packaging & POS design (for product brands)",
+                "SEO-friendly website and social profiles",
+                "Launch campaign strategy and content calendar",
+                "Brand guidelines for consistent rollout"
             ],
-            outcome: "Market-ready branded product",
+            outcome: "Market-ready branded product with global launch plan",
             color: "from-green-500 to-green-600"
         }
     ];
+
 
     return (
         <section className="relative py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-white">

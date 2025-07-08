@@ -101,7 +101,7 @@ const CookiePolicyPage = () => {
                             className="prose prose-amber max-w-none"
                         >
                             <p className="text-lg text-gray-600 mb-8">
-                                This Cookie Policy explains how UniTechnoStack (&ldquo;we&ldquo;, &ldquo;us&ldquo;, or &ldquo;our&ldquo;) uses cookies and similar tracking technologies when you visit our website or use our services.
+                                This Cookie Policy explains how <span className='bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600'>ShreeKhodiyar TechnoStack</span> (&ldquo;we&ldquo;, &ldquo;us&ldquo;, or &ldquo;our&ldquo;) uses cookies and similar tracking technologies when you visit our website or use our services.
                             </p>
 
                             {/* What Are Cookies */}
@@ -312,8 +312,8 @@ const CookiePolicyPage = () => {
                                         If you have any questions about this Cookie Policy, you can contact us:
                                     </p>
                                     <ul className="space-y-2">
-                                        <li><strong>By email:</strong> privacy@unitechnostack.com</li>
-                                        <li><strong>By mail:</strong> 123 Cookie Lane, Compliance City, CA 90210</li>
+                                        <li><strong>By email:</strong> privacy@shreekhodiyartech.com</li>
+                                        <li><strong>By mail:</strong> Blue Stone, 409, Surat, Gujarat</li>
                                     </ul>
                                 </div>
                             </motion.section>

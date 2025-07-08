@@ -16,7 +16,7 @@ const CareersPage = () => {
     const [showApplicationForm, setShowApplicationForm] = useState(false);
     const [selectedJob, setSelectedJob] = useState(null);
     const [jobOpenings, setJobOpenings] = useState([]);
-    const [loading, setLoading] = useState(true);
+    // const [isPageLoading, setIsPageLoading] = useState(true);
 
     // Add form state
     const [applicationData, setApplicationData] = useState({
@@ -190,15 +190,19 @@ const CareersPage = () => {
                 setJobOpenings(response.data?.data || []);
             } catch (err) {
                 console.error("Failed to fetch careers:", err.response?.data || err.message);
-            } finally {
-                setLoading(false);
             }
         };
 
         fetchCareers();
     }, []);
+    // if (isPageLoading) {
+    //     return (
+    //         <div className="flex items-center justify-center h-screen">
+    //             <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500" />
+    //         </div>
+    //     );
+    // }
 
-    if (loading) return <div>Loading...</div>;
     // Handle form submission
     // console.log("expandedJob", expandedJob);
     const handleSubmit = async (e) => {

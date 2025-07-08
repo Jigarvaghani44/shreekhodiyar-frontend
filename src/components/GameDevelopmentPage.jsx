@@ -21,21 +21,37 @@ const GameDevelopmentPage = () => {
 
     const features = [
         {
-            title: "Cutting-Edge Graphics",
-            description: "We implement the latest rendering techniques for stunning visuals",
-            icon: <FiPlay />
+            title: "Cutting-Edge 2D & 3D Graphics",
+            description: "We leverage advanced rendering engines and shaders to create immersive, high-fidelity visuals for mobile, PC, and console platforms.",
+            icon: "🎮",
+            keywords: ["game graphics", "3D rendering", "real-time lighting", "cross-platform visuals"]
         },
         {
-            title: "Optimized Performance",
-            description: "Smooth gameplay across all target platforms and devices",
-            icon: <FiCpu />
+            title: "Optimized Cross-Platform Performance",
+            description: "Our games are engineered for speed and stability, ensuring smooth performance across Android, iOS, WebGL, and desktop with minimal load times.",
+            icon: "⚙️",
+            keywords: ["game optimization", "mobile performance", "low-latency gameplay", "Unity optimization"]
         },
         {
-            title: "Engaging Gameplay",
-            description: "Core mechanics designed for maximum player retention",
-            icon: <FiCheck />
+            title: "Addictive & Engaging Gameplay",
+            description: "We design core game mechanics and reward systems that maximize user engagement, session length, and retention using proven gamification strategies.",
+            icon: "🔥",
+            keywords: ["gameplay design", "user engagement", "retention strategy", "gamification"]
+        },
+        {
+            title: "AR/VR Game Integration",
+            description: "We create immersive augmented and virtual reality experiences using Unity, ARKit, ARCore, Oculus, and Meta Quest SDKs for next-gen gameplay.",
+            icon: "🕶️",
+            keywords: ["AR VR development", "augmented reality games", "virtual reality apps", "Unity VR"]
+        },
+        {
+            title: "Monetization & In-App Purchases",
+            description: "We integrate proven monetization strategies like in-app purchases, reward ads, and subscriptions to boost revenue while enhancing player satisfaction.",
+            icon: "💰",
+            keywords: ["game monetization", "in-app purchases", "reward ads", "mobile game revenue"]
         }
     ];
+
 
     return (
         <div className="bg-gray-900 text-white">

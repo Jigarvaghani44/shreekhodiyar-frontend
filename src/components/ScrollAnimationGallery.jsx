@@ -5,11 +5,12 @@ import { motion } from 'framer-motion';
 const ScrollAnimationGallery = () => {
     const [currentTextIndex, setCurrentTextIndex] = useState(0);
     const texts = [
-        "Boost Your Online Presence",
-        "Grow Your Business",
-        "Increase Your Revenue",
-        "Dominate Your Market"
+        "Boost Your Online Presence Globally",
+        "Grow Your Business with Digital Marketing",
+        "Increase Your Revenue Through SEO & PPC",
+        "Dominate Your Market with a Powerful Brand"
     ];
+
 
     useEffect(() => {
         const interval = setInterval(() => {

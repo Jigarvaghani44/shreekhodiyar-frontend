@@ -22,7 +22,6 @@ import OurApproach from "./OurApproach";
 function Homepage() {
     return (
         <div className="Homepage">
-            {/* <HeroSection /> */}
             <OurServices />
             <BusinessStarterGuide />
             <OurApproach />

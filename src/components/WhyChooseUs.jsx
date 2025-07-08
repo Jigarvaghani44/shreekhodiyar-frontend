@@ -15,73 +15,76 @@ const WhyChooseUs = () => {
         {
             icon: <FaLightbulb className="text-yellow-400" size={28} />,
             title: "Innovation Driven",
-            description: "We thrive on innovation, crafting solutions that truly stand out. Our tech experts stay abreast of the latest technologies to deliver cutting-edge solutions.",
+            description: "We thrive on innovation, crafting standout digital solutions. Our tech experts continuously adopt the latest technologies to keep your business ahead.",
             emoji: "🚀"
         },
         {
             icon: <FaMoneyBillWave className="text-green-400" size={28} />,
             title: "Cost Effective",
-            description: "We deliver premium software development services with the latest technology at competitive prices, ensuring maximum ROI for your investment.",
+            description: "We provide affordable software development with cutting-edge technologies, delivering maximum return on investment (ROI).",
             emoji: "💰"
         },
         {
             icon: <FaUsers className="text-blue-400" size={28} />,
             title: "Dedicated Team",
-            description: "Our team of creative professionals has successfully delivered hundreds of projects with exceptional quality and attention to detail.",
+            description: "Our skilled professionals consistently deliver high-quality digital products with creativity, agility, and precision.",
             emoji: "👥"
         },
         {
             icon: <FaChartLine className="text-purple-400" size={28} />,
             title: "Industry Expertise",
-            description: "We create innovative IT solutions tailored to diverse industries, combining technical excellence with deep domain knowledge.",
+            description: "We combine domain-specific insights with technical expertise to build tailored IT solutions across industries.",
             emoji: "🧠"
         },
         {
             icon: <FaCheckCircle className="text-red-400" size={28} />,
             title: "Quality Assurance",
-            description: "Rigorous testing for compatibility, performance, and functionality ensures we deliver flawless solutions that perform exceptionally.",
+            description: "Our QA processes include rigorous testing for compatibility, performance, and security to ensure a flawless product.",
             emoji: "✅"
         },
         {
             icon: <FaTools className="text-orange-400" size={28} />,
             title: "Custom Solutions",
-            description: "We specialize in tailored software that precisely meets your business needs, ensuring optimal efficiency and strategic alignment.",
+            description: "We develop tailored software applications aligned with your business goals, improving efficiency and performance.",
             emoji: "🛠️"
         }
     ];
+
 
     const benefits = [
         {
             icon: <FaRocket className="text-blue-400" size={24} />,
             title: "Innovation Focused",
-            text: "We push boundaries to design future-ready digital solutions"
+            text: "We push boundaries to design future-ready digital solutions."
         },
         {
             icon: <FaBrain className="text-purple-400" size={24} />,
             title: "Technical Expertise",
-            text: "Our professionals bring deep technical knowledge across platforms"
+            text: "Our team offers deep platform knowledge across tech stacks and frameworks."
         },
         {
             icon: <FaHandHoldingUsd className="text-green-400" size={24} />,
             title: "Competitive Pricing",
-            text: "Premium development services with budget-friendly pricing"
+            text: "Enterprise-grade services at affordable prices to maximize value."
         },
         {
             icon: <FaShieldAlt className="text-red-400" size={24} />,
             title: "Quality Commitment",
-            text: "Multi-phase testing ensures flawless performance"
+            text: "Multi-stage QA testing ensures every solution meets the highest standards."
         },
         {
             icon: <FaUserTie className="text-yellow-400" size={24} />,
             title: "Experienced Team",
-            text: "Proven track record with numerous success stories"
+            text: "We bring a proven track record across global markets and verticals."
         },
         {
             icon: <FaCogs className="text-orange-400" size={24} />,
             title: "Tailored Approach",
-            text: "Custom solutions designed for your specific requirements"
+            text: "Every project is built with a client-specific strategy for real impact."
         }
     ];
+
+
 
     const containerVariants = {
         hidden: { opacity: 0 },
@@ -142,7 +145,7 @@ const WhyChooseUs = () => {
                         transition={{ duration: 0.6, delay: 0.1 }}
                         className="text-2xl sm:text-3xl font-semibold text-gray-300 mb-6"
                     >
-                        Delivering Excellence in Digital Solutions
+                        Your Trusted Partner in Digital Innovation
                     </motion.h2>
 
                     <motion.p
@@ -152,8 +155,9 @@ const WhyChooseUs = () => {
                         className="text-lg text-gray-400 max-w-4xl mx-auto"
                         itemProp="description"
                     >
-                        In today's rapidly evolving digital landscape, we combine cutting-edge technology with innovative thinking to create robust, scalable solutions that drive your business forward.
+                        At <strong>Shree Khodiyar Technostack</strong>, we deliver high-performance digital solutions that help you stand out. Whether it's custom software, mobile apps, web platforms, or marketing strategies — we combine innovation, reliability, and speed to accelerate your business growth globally.
                     </motion.p>
+
                 </header>
 
                 {/* Animated decorative elements */}
@@ -173,8 +177,9 @@ const WhyChooseUs = () => {
                         className="text-center bg-gray-800/70 backdrop-blur-sm rounded-xl p-6 shadow-sm max-w-5xl mx-auto border border-gray-700"
                     >
                         <p className="text-xl text-gray-300">
-                            At <span className="font-semibold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400">Shree Khodiyar Technostack</span>, we redefine digital excellence through innovation, quality, and client-focused solutions. Here's what makes us different:
+                            At <span className="font-semibold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400">Shree Khodiyar Technostack</span>, we deliver next-gen digital solutions powered by innovation, precision, and a results-driven mindset. Discover why global businesses trust us to elevate their digital presence.
                         </p>
+
                     </motion.div>
                 </motion.div>
 
@@ -232,9 +237,10 @@ const WhyChooseUs = () => {
                         Our <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400">Advantages</span>
                     </h3>
                     <p className="text-xl text-gray-400 max-w-4xl mx-auto mb-12">
-                        Combining technical expertise with business acumen to deliver solutions that matter.<br />
-                        We stay ahead by embracing innovation while maintaining unwavering commitment to quality and client satisfaction.
+                        At <strong>Shree Khodiyar Technostack</strong>, we merge technical excellence with business intelligence to deliver impactful, scalable digital solutions.<br />
+                        By continuously embracing innovation, we ensure high-performance outcomes while staying committed to quality, reliability, and client success worldwide.
                     </p>
+
 
                     <motion.div
                         variants={containerVariants}
@@ -269,13 +275,13 @@ const WhyChooseUs = () => {
                     className="text-center"
                 >
                     <div className="inline-block bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl p-0.5">
-                        <motion.button
+                        <a href="/quickenquiry"><motion.button
                             whileHover={{ scale: 1.02 }}
                             whileTap={{ scale: 0.98 }}
                             className="bg-gray-900 text-white font-bold py-4 px-8 rounded-xl text-lg hover:bg-gray-800 transition-colors duration-300"
                         >
                             Start Your Project Today
-                        </motion.button>
+                        </motion.button></a>
                     </div>
                 </motion.div>
             </div>

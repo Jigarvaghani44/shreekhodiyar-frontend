@@ -19,142 +19,191 @@ const ServicesPage = () => {
     const services = {
         web: {
             title: "Web Development",
-            icon: <FiCode className="text-4xl text-blue-600" />,
-            description: "We build high-performance, SEO-optimized websites that drive conversions and user engagement.",
+            icon: "🌐",
+            description: "Custom websites and web applications optimized for SEO, speed, and global scalability.",
             features: [
-                "Custom React/Next.js Development",
-                "Responsive & Mobile-First Design",
-                "SEO Optimization",
-                "E-Commerce Solutions",
-                "CMS Integration (WordPress, Sanity)"
+                "React.js / Next.js Web App Development",
+                "Mobile-First & Cross-Browser Responsive Design",
+                "Core Web Vitals Optimization for Google Ranking",
+                "Headless CMS Integration (WordPress, Sanity)",
+                "Secure, Scalable, and High-Converting UX/UI"
             ],
             stats: [
                 { value: "3x", label: "Faster Load Times" },
                 { value: "100%", label: "Mobile Responsive" },
                 { value: "50+", label: "Websites Launched" },
                 { value: "4.8/5", label: "Client Satisfaction" }
+            ],
+            keywords: [
+                "custom web development company", "SEO-optimized websites",
+                "React development agency", "Next.js website experts",
+                "headless CMS development", "web development services India USA Europe"
             ]
         },
+
         mobile: {
-            title: "Mobile Development",
-            icon: <FiSmartphone className="text-4xl text-purple-600" />,
-            description: "Cross-platform mobile apps with seamless UX and cutting-edge performance.",
+            title: "Mobile App Development",
+            icon: "📱",
+            description: "Cross-platform mobile apps for Android and iOS with stunning UI, fast performance, and seamless user experience.",
             features: [
-                "React Native & Flutter Apps",
-                "iOS & Android Development",
-                "Push Notifications",
-                "API Integration",
-                "App Store Optimization"
+                "React Native & Flutter App Development",
+                "Native Android & iOS Apps",
+                "Push Notification & Firebase Integration",
+                "API Connectivity with Backend Systems",
+                "App Store & Google Play Optimization (ASO)"
             ],
             stats: [
                 { value: "4.9/5", label: "App Store Rating" },
                 { value: "2M+", label: "Downloads" },
                 { value: "60%", label: "Faster Development" },
                 { value: "4.8/5", label: "Client Satisfaction" }
+            ],
+            keywords: [
+                "mobile app development company", "React Native developers",
+                "iOS and Android apps", "Flutter app agency",
+                "ASO services", "app development India USA Australia"
             ]
         },
+
         game: {
-            title: "Game Development",
-            icon: <FiCpu className="text-4xl text-green-600" />,
-            description: "Immersive 2D and 3D games with stunning graphics, smooth controls, and engaging gameplay.",
+            title: "2D/3D Game Development",
+            icon: "🎮",
+            description: "High-performance 2D/3D games using Unity for mobile, PC, and AR/VR platforms.",
             features: [
-                "Unity Engine Development",
-                "Cross-Platform Support (Mobile, PC, Console)",
-                "Multiplayer Integration",
-                "In-App Purchases & Ads",
-                "Custom Game Physics & AI"
+                "Unity Engine Game Development",
+                "Cross-Platform Game Publishing",
+                "AR/VR Game Integration",
+                "Multiplayer & In-App Purchases",
+                "Custom Physics, AI & Storyboarding"
             ],
             stats: [
-                { value: "100+", label: "Games Published" },
+                { value: "10+", label: "Games Published" },
                 { value: "1M+", label: "Players Worldwide" },
                 { value: "4.8/5", label: "Average Player Rating" },
-                { value: "95%", label: "Retention Rate" }
+                { value: "98%", label: "Retention Rate" }
+            ],
+            keywords: [
+                "2D 3D game development company", "Unity game developers",
+                "AR VR game studio", "mobile game development",
+                "cross-platform games", "game development India Europe USA"
             ]
         },
+
         digitalMarketing: {
-            title: "Digital Marketing",
-            icon: <FiBarChart2 className="text-4xl text-orange-500" />,
-            description: "Drive measurable growth with powerful strategies across SEO, PPC, email, and content marketing.",
+            title: "Digital Marketing Services",
+            icon: "📈",
+            description: "Result-oriented SEO, PPC, content marketing, and email automation to grow your brand visibility and leads.",
             features: [
-                "Search Engine Optimization (SEO)",
-                "Pay-Per-Click Advertising (PPC)",
-                "Content & Email Marketing",
-                "Performance Analytics & Reporting",
-                "Conversion Rate Optimization"
+                "Technical & Local SEO Optimization",
+                "Google Ads, Meta Ads, LinkedIn Ads",
+                "Email Marketing & Funnel Automation",
+                "Blogging, Copywriting, and Content SEO",
+                "Conversion Rate Optimization (CRO)"
             ],
             stats: [
                 { value: "85%", label: "Client ROI Growth" },
                 { value: "3x", label: "Lead Generation" },
-                { value: "60%", label: "Reduced Cost-per-Acquisition" },
-                { value: "50K+", label: "Monthly Traffic Increase" }
+                { value: "60%", label: "Lower CPA" },
+                { value: "50K+", label: "Monthly Organic Visits" }
+            ],
+            keywords: [
+                "digital marketing agency India", "SEO company USA",
+                "Google Ads expert Australia", "performance marketing Europe",
+                "content marketing for startups", "email automation for ecommerce"
             ]
         },
+
         socialMedia: {
-            title: "Social Media Handling",
-            icon: <FiShare2 className="text-4xl text-pink-600" />,
-            description: "Engage your audience and build a loyal community with expert social media management.",
+            title: "Social Media Management",
+            icon: "📢",
+            description: "Boost brand engagement, drive community growth, and increase trust with expert-managed social media strategies.",
             features: [
-                "Content Calendar & Strategy",
-                "Daily Posts & Story Designs",
-                "Influencer Collaboration",
-                "Community Engagement",
-                "Platform Growth Analytics"
+                "Instagram & Facebook Content Strategy",
+                "Daily Story, Reels & Post Scheduling",
+                "Influencer Collaboration & UGC",
+                "Analytics & KPI Reports",
+                "Community Engagement & Support"
             ],
             stats: [
-                { value: "40%", label: "Avg. Engagement Growth" },
+                { value: "40%", label: "Engagement Growth" },
                 { value: "20K+", label: "Followers Gained" },
                 { value: "4.9/5", label: "Client Feedback" },
                 { value: "99%", label: "Consistency Rate" }
+            ],
+            keywords: [
+                "social media agency", "Instagram marketing experts",
+                "Facebook page management", "social media strategy India USA",
+                "UGC content growth", "LinkedIn management service"
             ]
         },
+
         shopify: {
             title: "Shopify Web Development",
-            icon: <FiShoppingCart className="text-4xl text-emerald-600" />,
-            description: "Launch and scale high-converting Shopify stores built for performance, UX, and brand identity.",
+            icon: "🛒",
+            description: "Custom Shopify storefronts optimized for conversions, mobile responsiveness, and brand growth.",
             features: [
-                "Custom Shopify Theme Development",
-                "Store Setup & Product Management",
-                "Shopify App Integrations",
-                "Payment Gateway Configuration",
-                "Speed Optimization & Analytics"
+                "Custom Shopify Themes & Liquid Code",
+                "Product Listing & Category Setup",
+                "Payment Gateway & Shipping Integration",
+                "Third-party App Integrations",
+                "Speed & SEO Optimization"
             ],
             stats: [
                 { value: "70%", label: "Conversion Rate Boost" },
                 { value: "50+", label: "Stores Launched" },
                 { value: "100%", label: "Mobile Optimized" },
                 { value: "4.9/5", label: "Client Satisfaction" }
+            ],
+            keywords: [
+                "Shopify development India", "Shopify store USA",
+                "ecommerce Shopify experts", "custom Shopify theme Australia",
+                "Shopify SEO optimization", "Shopify Plus migration"
             ]
         }
     };
-    // Testimonials
-
     const steps = [
         {
             step: "1",
-            title: "Discovery",
-            description: "Deep dive into your business goals and requirements to create a clear project roadmap.",
+            title: "Discovery & Strategy",
+            description: "Understand your brand, target audience, and business goals to align technology with success metrics.",
+            keywords: [
+                "project discovery phase", "business strategy for software", "startup tech planning"
+            ]
         },
         {
             step: "2",
-            title: "Planning",
-            description: "Create a detailed plan, set timelines, and allocate resources to ensure smooth project execution.",
+            title: "UX/UI Planning & Roadmap",
+            description: "Craft seamless user experiences and map features to user journeys for optimized engagement.",
+            keywords: [
+                "UX UI roadmap", "user experience design", "design planning"
+            ]
         },
         {
             step: "3",
-            title: "Design & Development",
-            description: "Design user-friendly interfaces and develop high-performance applications tailored to your needs.",
+            title: "Agile Design & Development",
+            description: "Iterative development with modern stacks, test-driven coding, and milestone-based sprints.",
+            keywords: [
+                "agile web development", "sprint based app development", "frontend backend design"
+            ]
         },
         {
             step: "4",
-            title: "Testing & Quality Assurance",
-            description: "Thorough testing to identify and fix any bugs, ensuring a seamless user experience.",
+            title: "Testing & QA",
+            description: "Perform cross-platform, performance, and functionality testing to deliver bug-free, high-quality software.",
+            keywords: [
+                "software QA testing", "mobile app testing services", "performance testing"
+            ]
         },
         {
             step: "5",
-            title: "Launch & Support",
-            description: "Deploy the project and provide ongoing support to keep your systems running smoothly.",
-        },
+            title: "Launch & Continuous Support",
+            description: "Go live confidently with support, updates, and growth optimization plans post-launch.",
+            keywords: [
+                "launch support services", "ongoing website maintenance", "post-launch app updates"
+            ]
+        }
     ];
+
 
     return (
         <div className="bg-gradient-to-b from-gray-50 to-white ">
@@ -171,12 +220,13 @@ const ServicesPage = () => {
                     transition={{ duration: 0.8 }}
                     className="max-w-7xl mx-auto text-center relative z-10 mt-10"
                 >
-                    <h1 className="text-4xl md:text-6xl font-bold mb-6 ">
-                        Our <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">Services</span>
+                    <h1 className="text-4xl md:text-6xl font-bold mb-6">
+                        Our <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">Digital Services</span>
                     </h1>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-                        We deliver cutting-edge solutions tailored to your business needs.
+                        At Shree Khodiyar Technostack, we craft performance-driven digital solutions — from custom software and mobile apps to eCommerce, game development, and global digital marketing. Trusted by startups and enterprises across India, USA, Europe & beyond.
                     </p>
+
                     <motion.div
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}

@@ -106,9 +106,9 @@ const PrivacyPolicyPage = () => {
                 <>
                     <p className="mb-4">If you have any questions about this Privacy Policy, please contact us:</p>
                     <ul className="space-y-2">
-                        <li><strong>By email:</strong> privacy@unitechnostack.com</li>
-                        <li><strong>By mail:</strong> 123 Privacy Lane, Compliance City, CA 90210</li>
-                        <li><strong>By phone:</strong> (555) 123-4567</li>
+                        <li><strong>By email:</strong> privacy@shreekhodiyartech.com</li>
+                        <li><strong>By mail:</strong> Blue Stone, 409, Surat, Gujarat</li>
+                        <li><strong>By phone:</strong> +91 9574160974</li>
                     </ul>
                 </>
             )
@@ -152,7 +152,7 @@ const PrivacyPolicyPage = () => {
                             className="prose prose-blue max-w-none"
                         >
                             <p className="text-lg text-gray-600 mb-8">
-                                At UniTechnoStack, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
+                                At ShreeKhodiyar TechnoStack, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
                             </p>
 
                             {sections.map((section, index) => (

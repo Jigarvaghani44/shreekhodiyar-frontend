@@ -5,16 +5,7 @@ import { FiArrowRight } from 'react-icons/fi';
 const ClientShowcase = () => {
     // Client data organized by industry
     const industries = [
-        {
-            name: "TECHNOLOGY",
-            clients: [
-                { name: "IBM", logo: "shreelogo.png" },
-                { name: "Xerox", logo: "nuvistalogo.png" },
-                { name: "Mitsui", logo: "shreelogo.png" },
-                { name: "Puma Energy", logo: "nuvistalogo.png" }
-            ],
-            color: "from-purple-600 to-indigo-600"
-        },
+
         {
             name: "RETAIL",
             clients: [
@@ -23,8 +14,18 @@ const ClientShowcase = () => {
                 { name: "Paul Stuart", logo: "nuvistalogo.png" },
                 { name: "Absolute Dogger", logo: "shreelogo.png" }
             ],
+            color: "from-purple-600 to-indigo-600"
+        },
+        {
+            name: "TECHNOLOGY",
+            clients: [
+                { name: "unitechnostack", logo: "unitechlogo2.png" },
+                { name: "Nuvista", logo: "nuvistalogo.png" },
+                { name: "Mitsui", logo: "shreelogo.png" },
+                { name: "Puma Energy", logo: "nuvistalogo.png" }
+            ],
             color: "from-amber-500 to-orange-500"
-        }
+        },
     ];
 
     const [activeIndustry, setActiveIndustry] = useState(0);

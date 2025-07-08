@@ -4,9 +4,9 @@ import { motion } from 'framer-motion';
 const BusinessJourney = () => {
     const stats = [
         { value: "6+", label: "Years of excellence", color: "from-blue-500 to-cyan-400" },
-        { value: "550+", label: "Clients served", color: "from-purple-500 to-pink-400" },
-        { value: "35+", label: "Industries", color: "from-amber-500 to-orange-400" },
-        { value: "80+", label: "Team experts", color: "from-emerald-500 to-teal-400" }
+        { value: "50+", label: "Clients served", color: "from-purple-500 to-pink-400" },
+        { value: "15+", label: "Industries", color: "from-amber-500 to-orange-400" },
+        { value: "20+", label: "Team experts", color: "from-emerald-500 to-teal-400" }
     ];
 
     return (
@@ -41,16 +41,17 @@ const BusinessJourney = () => {
                         className="lg:w-1/2"
                     >
                         <h3 className="text-2xl md:text-3xl font-semibold mb-6">
-                            Building meaningful connections through innovation
+                            Building Meaningful Digital Connections Through Innovation
                         </h3>
+
                         <p className="text-gray-300 mb-6">
-                            Our journey began with a simple mission: to create digital solutions that make a real difference.
-                            Over the years, we've grown into a trusted partner for businesses across multiple industries.
+                            At <strong>ShreeKhodiyar TechnoStack</strong>, our journey started with a powerful mission: to craft innovative digital solutions that make a real impact. Today, we’re a globally trusted technology and marketing partner, serving clients across <strong>India</strong>, <strong>USA</strong>, <strong>Australia</strong>, and <strong>Europe</strong>.
                         </p>
+
                         <p className="text-gray-300">
-                            What sets us apart is our commitment to understanding each client's unique needs and delivering
-                            tailored solutions that drive measurable results.
+                            What makes us different is our deep commitment to understanding each brand’s unique challenges and building <strong>custom software</strong> and <strong>marketing strategies</strong> that generate <strong>measurable growth</strong>, boost <strong>customer engagement</strong>, and ensure long-term success.
                         </p>
+
                     </motion.div>
 
                     {/* Visual Element */}
@@ -66,7 +67,7 @@ const BusinessJourney = () => {
                                 <div className="relative">
                                     <div className="text-center p-6">
                                         <div className="inline-block text-5xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-500 mb-4">
-                                            6+
+                                            3+
                                         </div>
                                         <p className="text-lg text-gray-200">Years of experience</p>
                                     </div>

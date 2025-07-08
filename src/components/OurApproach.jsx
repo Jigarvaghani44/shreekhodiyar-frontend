@@ -4,37 +4,38 @@ const VisualProcess = () => {
     const processes = [
         {
             step: "01",
-            title: "Envision",
-            description: "We believe in the power of imagination and strive to continuously think big and push boundaries.",
+            title: "Envision & Ideation",
+            description: "Spark innovation with strategic ideation and creative brainstorming. We help global brands imagine powerful digital experiences and growth opportunities.",
             image: "https://granth.ae/wp-content/uploads/2023/01/Envision.png",
             color: "purple",
             position: "left"
         },
         {
             step: "02",
-            title: "Establish",
-            description: "Building strong, long-lasting relationships through exceptional service and quality.",
+            title: "Establish Brand Trust",
+            description: "Build credibility through exceptional user experience, service quality, and brand consistency. We nurture long-lasting relationships for international markets.",
             image: "https://granth.ae/wp-content/uploads/2023/01/Establish.png",
             color: "amber",
             position: "right"
         },
         {
             step: "03",
-            title: "Execute",
-            description: "Implementing plans with precision to deliver results that exceed expectations.",
+            title: "Execute Digital Strategy",
+            description: "Implement precise web, app & marketing solutions that drive ROI. Our global execution approach ensures measurable results across India, USA, Australia & Europe.",
             image: "https://granth.ae/wp-content/uploads/2023/01/Execute.png",
             color: "green",
             position: "left"
         },
         {
             step: "04",
-            title: "Echo",
-            description: "Continuously improving by listening to customers and market evolution.",
+            title: "Echo & Optimize",
+            description: "Amplify success with continuous improvement, customer feedback analysis, and market adaptation. We turn performance data into scalable growth strategies.",
             image: "https://granth.ae/wp-content/uploads/2023/01/Echo.png",
             color: "blue",
             position: "right"
         }
     ];
+
 
     const colorMap = {
         purple: "from-purple-600 to-violet-600",
@@ -89,7 +90,7 @@ const VisualProcess = () => {
 
                             {/* Text Content */}
                             <div className="flex-1">
-                                <div className={`inline-block ${process.position === 'left' ? 'md:text-left' : 'md:text-right'} mb-4`}>
+                                <div className="inline-block md:text-left mb-4">
                                     <span className={`text-xs font-semibold tracking-wider uppercase ${process.color === 'purple' ? 'text-purple-400' : process.color === 'amber' ? 'text-amber-400' : process.color === 'green' ? 'text-emerald-400' : 'text-blue-400'}`}>
                                         Phase {process.step}
                                     </span>
@@ -97,7 +98,7 @@ const VisualProcess = () => {
                                         {process.title}
                                     </h3>
                                 </div>
-                                <p className={`text-lg text-gray-300 ${process.position === 'left' ? 'md:text-left' : 'md:text-right'}`}>
+                                <p className="text-lg text-gray-300 md:text-left">
                                     {process.description}
                                 </p>
                             </div>
@@ -110,7 +111,7 @@ const VisualProcess = () => {
                     <a href="/quickenquiry"> <button className="px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-bold rounded-full hover:shadow-xl hover:shadow-purple-500/20 transition-all">
                         Start Your Transformation Journey
                     </button></a>
-                   
+
                 </div>
             </div>
         </section>

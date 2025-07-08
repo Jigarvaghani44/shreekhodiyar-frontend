@@ -9,7 +9,7 @@ const TermsOfServicePage = () => {
             icon: "📜",
             content: (
                 <>
-                    <p className="mb-4">Welcome to <span className="font-semibold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">UniTechnoStack</span> (&ldquo;Company&ldquo;, &ldquo;we&ldquo;, &ldquo;our&ldquo;, &ldquo;us&ldquo;). These Terms of Service (&ldquo;Terms&ldquo;) govern your use of our website and services.</p>
+                    <p className="mb-4">Welcome to <span className="font-semibold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">ShreeKhodiyar TechnoStack</span> (&ldquo;Company&ldquo;, &ldquo;we&ldquo;, &ldquo;our&ldquo;, &ldquo;us&ldquo;). These Terms of Service (&ldquo;Terms&ldquo;) govern your use of our website and services.</p>
                     <div className="bg-blue-50 border-l-4 border-blue-500 p-4 mb-4">
                         <p className="text-blue-700">By accessing or using our services, you agree to be bound by these Terms. If you disagree with any part, you may not access the service.</p>
                     </div>
@@ -281,7 +281,7 @@ const TermsOfServicePage = () => {
                                 </svg>
                                 Email
                             </h4>
-                            <p className="text-blue-600">legal@unitechnostack.com</p>
+                            <p className="text-blue-600">legal@shreekhodiyartech.com</p>
                         </div>
                         <div className="bg-white p-4 rounded-lg shadow-sm">
                             <h4 className="font-medium text-gray-900 mb-2 flex items-center">
@@ -290,7 +290,7 @@ const TermsOfServicePage = () => {
                                 </svg>
                                 Phone
                             </h4>
-                            <p className="text-green-600">(555) 123-4567</p>
+                            <p className="text-green-600">+91 9574160974</p>
                         </div>
                         <div className="bg-white p-4 rounded-lg shadow-sm">
                             <h4 className="font-medium text-gray-900 mb-2 flex items-center">
@@ -300,7 +300,7 @@ const TermsOfServicePage = () => {
                                 </svg>
                                 Mail
                             </h4>
-                            <p className="text-purple-600">123 Legal Avenue, Compliance City, CA 90210</p>
+                            <p className="text-purple-600">Blue Stone, 409, Surat, Gujarat</p>
                         </div>
                     </div>
                 </div>

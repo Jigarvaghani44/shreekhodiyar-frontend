@@ -14,19 +14,22 @@ const DigitalMarketingAgencySection = () => {
                 {/* Hero Heading */}
                 <div className="text-center mb-16">
                     <span className="inline-block px-4 py-1.5 text-xs font-semibold tracking-wide text-blue-600 bg-blue-50 rounded-full mb-4 uppercase">
-                        Premier Digital Marketing Solutions
+                        Premier Digital Marketing Agency
                     </span>
+
                     <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6 leading-tight">
                         Transform Your <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">Online Presence</span>
                     </h1>
+
                     <div className="max-w-3xl mx-auto grid md:grid-cols-2 gap-8 text-lg text-gray-600">
                         <p className="leading-relaxed">
-                            In today's digital landscape, having a strategic marketing approach is no longer optional. We craft data-driven campaigns that deliver measurable results and real business growth.
+                            In today’s competitive digital economy, a strategic approach to <strong>digital marketing</strong> is essential. At <strong>ShreeKhodiyar TechnoStack</strong>, we create <strong>data-driven campaigns</strong> that generate <strong>real business growth</strong>, boost <strong>search visibility</strong>, and maximize your <strong>ROI</strong>.
                         </p>
                         <p className="leading-relaxed">
-                            Our full-service digital marketing agency combines creativity with analytics to help brands stand out, attract qualified leads, and convert them into loyal customers.
+                            As a full-service <strong>global digital marketing agency</strong>, we blend creativity and analytics to help brands across <strong>India</strong>, <strong>USA</strong>, <strong>Australia</strong>, and <strong>Europe</strong> stand out. Our solutions attract <strong>qualified leads</strong>, increase <strong>website traffic</strong>, and convert visitors into loyal customers.
                         </p>
                     </div>
+
                 </div>
 
                 {/* Services Overview */}
@@ -287,12 +290,13 @@ const DigitalMarketingAgencySection = () => {
                             </div>
                         </div>
                         <div className="mt-10 text-center">
-                            <button
+                            <a href="/quickenquiry"><button
                                 onClick={handleClick}
                                 className="bg-white text-blue-600 font-semibold px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors shadow-md hover:shadow-lg"
                             >
                                 Get Your Free Marketing Audit
-                            </button>
+                            </button></a>
+
                             <p className="text-blue-100 text-sm mt-3">
                                 Discover opportunities to grow your business online
                             </p>

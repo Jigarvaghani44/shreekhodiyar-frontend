@@ -121,10 +121,10 @@ const LocationFooter = () => {
                     className="mt-16 text-center"
                 >
                     <h3 className="text-2xl font-bold mb-4">Ready to work with us?</h3>
-                    <button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-medium py-3 px-8 rounded-full inline-flex items-center shadow-lg hover:shadow-xl transition-all">
+                    <a href="/quickenquiry">  <button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-medium py-3 px-8 rounded-full inline-flex items-center shadow-lg hover:shadow-xl transition-all">
                         <FaEnvelope className="mr-2" />
                         Get in Touch
-                    </button>
+                    </button></a>
                 </motion.div>
             </div>
         </div>

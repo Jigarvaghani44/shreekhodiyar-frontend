@@ -159,7 +159,7 @@ const UIDesignPage = () => {
                                 ))}
                             </ul>
                             <a href="/quickenquiry"><button className="px-6 py-3 bg-gray-900 text-white rounded-lg font-medium hover:bg-gray-800 transition-all flex items-center">
-                                Learn More
+                                Request a quick enquiry
                                 <FiArrowRight className="ml-2" />
                             </button></a>
 

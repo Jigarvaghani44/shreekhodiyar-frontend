@@ -11,86 +11,82 @@ const FAQSection = () => {
 
     const faqs = [
         {
-            question: "What services does UniTechnoStack offer?",
-            answer: "We provide comprehensive digital solutions including web development, mobile app development, game development, Shopify e-commerce solutions, and full-service digital marketing strategies."
+            question: "What does Shree Khodiyar Technostack specialize in?",
+            answer:
+                "We specialize in end-to-end digital solutions including custom web development, digital marketing, mobile apps, e-commerce platforms, branding, software development, and IT consulting. Our goal is to drive measurable growth for your business."
         },
         {
-            question: "How long does a typical website project take?",
-            answer: "Our standard website projects take 4-8 weeks depending on complexity. We provide a detailed timeline during our initial consultation after understanding your requirements."
+            question: "Do you offer complete digital marketing services?",
+            answer:
+                "Yes. We provide full-suite digital marketing services including SEO, social media marketing, Google & Meta ads, content marketing, and performance campaigns—all designed to improve visibility, traffic, and ROI."
         },
         {
-            question: "Do you offer ongoing maintenance after launch?",
-            answer: "Yes, we provide flexible maintenance packages including security updates, content changes, performance optimization, and technical support."
+            question: "What industries do you serve?",
+            answer:
+                "We serve startups, SMEs, and enterprises across industries like e-commerce, healthcare, education, finance, real estate, and IT. Our digital solutions are tailored to meet the unique needs of each sector."
         },
         {
-            question: "What platforms do you use for web development?",
-            answer: "We work with various technologies including React, Next.js, WordPress, Shopify, and custom PHP/Node.js solutions based on project requirements."
+            question: "Do you provide custom software and ERP/CRM solutions?",
+            answer:
+                "Absolutely. We build scalable custom software, ERP systems, and CRM tools using technologies like Python, Django, and Node.js to streamline operations and improve business efficiency."
         },
         {
-            question: "Can you help with mobile app development?",
-            answer: "Absolutely! We develop both iOS and Android apps using native (Swift/Kotlin) and cross-platform (React Native/Flutter) technologies."
+            question: "Are your websites and apps SEO-friendly and mobile responsive?",
+            answer:
+                "Yes. We follow SEO best practices and use a mobile-first approach to ensure your digital presence ranks well and performs flawlessly across all devices."
         },
         {
-            question: "Do you create custom game designs?",
-            answer: "Yes, our game development team specializes in both 2D and 3D games using Unity and Unreal Engine, with expertise in AR/VR experiences."
-        },
-        // {
-        //     question: "What's included in your digital marketing services?",
-        //     answer: "Our marketing services cover SEO, PPC advertising, social media management, content marketing, email campaigns, and comprehensive analytics."
-        // },
-        {
-            question: "How do you ensure websites are SEO-friendly?",
-            answer: "We implement SEO best practices from the ground up including proper site architecture, optimized content, fast loading speeds, and mobile responsiveness."
-        },
-        // {
-        //     question: "Can you migrate my existing site to Shopify?",
-        //     answer: "Yes, we specialize in Shopify migrations with zero downtime, including product/data transfer, theme customization, and app integration."
-        // },
-        {
-            question: "What's your pricing structure?",
-            answer: "We offer both project-based pricing and retainer models, tailored to your specific needs. All projects begin with a free consultation and transparent quote."
+            question: "Do you develop Shopify and e-commerce websites?",
+            answer:
+                "Yes. We build fast, conversion-optimized e-commerce platforms on Shopify and WooCommerce. We also handle store migration, custom apps, and payment gateway integrations."
         },
         {
-            question: "Do you provide design mockups before development?",
-            answer: "Yes, we create detailed wireframes and design prototypes for client approval before any development begins."
+            question: "Do you create gaming apps (2D, 3D, AR/VR)?",
+            answer:
+                "Yes. Our gaming division creates engaging 2D/3D mobile games and immersive AR/VR gaming apps using Unity Games Engine—tailored for global markets."
         },
         {
-            question: "How do you handle project communication?",
-            answer: "We assign a dedicated project manager, use collaborative tools like Slack/Asana, and provide weekly progress reports with demos."
+            question: "Do you offer app development for iOS and Android?",
+            answer:
+                "We offer cross-platform and native mobile app development using Flutter, React Native, Swift, and Kotlin—delivering seamless performance on iOS and Android devices."
         },
         {
-            question: "What industries have you worked with?",
-            answer: "We've served clients across e-commerce, healthcare, education, real estate, SaaS, entertainment, and non-profit sectors."
+            question: "Can you help with digital transformation and IT consulting?",
+            answer:
+                "Yes. Our IT consulting services cover tech stack selection, process automation, digital strategy, and cloud migration to support your digital transformation goals."
         },
         {
-            question: "Can you integrate third-party APIs?",
-            answer: "Yes, we regularly integrate payment gateways, CRM systems, marketing tools, and other third-party services."
+            question: "What makes Shree Khodiyar Technostack different?",
+            answer:
+                "We blend creativity, technical expertise, and performance marketing to create digital experiences that drive real impact. Our solutions are result-driven, cost-effective, and globally scalable."
         },
         {
-            question: "Do you offer hosting services?",
-            answer: "We provide managed hosting solutions with 99.9% uptime, automatic backups, and security monitoring."
+            question: "What is your development process like?",
+            answer:
+                "We follow a structured process: Discovery → Strategy → Design → Development → Launch → Support. We maintain transparency and collaboration at every stage."
         },
         {
-            question: "What makes your approach different?",
-            answer: "We combine technical expertise with business strategy, focusing on measurable results rather than just deliverables."
+            question: "Can I hire your team for long-term projects?",
+            answer:
+                "Yes. We offer flexible engagement models—project-based, hourly, and dedicated team hiring—tailored to your business size and needs."
         },
         {
-            question: "How do you ensure mobile responsiveness?",
-            answer: "We use a mobile-first development approach with rigorous testing across all device sizes before launch."
+            question: "How do you ensure quality and performance?",
+            answer:
+                "Every project goes through multi-stage QA testing, performance optimization, and user testing before launch. We also provide post-launch support and maintenance."
         },
         {
-            question: "Can you work with our existing design team?",
-            answer: "Absolutely! We frequently collaborate with in-house teams, providing development expertise to bring designs to life."
+            question: "Where is Shree Khodiyar Technostack located?",
+            answer:
+                "We are headquartered in India and serve clients globally including in the USA, Australia, UK, and Europe through remote collaboration and client success teams."
         },
         {
-            question: "What's your revision policy?",
-            answer: "We include reasonable revisions in all projects and have clear change order processes for significant scope changes."
-        },
-        {
-            question: "How do I get started?",
-            answer: "Simply contact us for a free consultation. We'll discuss your goals and provide a customized proposal within 24 hours."
+            question: "How can I get started with your team?",
+            answer:
+                "You can reach out through our website’s contact form, WhatsApp, or email. We offer a free consultation and will share a custom proposal within 24–48 hours."
         }
     ];
+
 
     return (
         <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white" id="faq">
@@ -145,9 +141,11 @@ const FAQSection = () => {
                     <p className="text-gray-600 mb-6">
                         Didn&apos;t find what you&apos;re looking for?
                     </p>
-                    <button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:bg-indigo-700 text-white font-medium py-3 px-8 rounded-lg transition-colors shadow-md hover:shadow-lg">
-                        <a href="/quickenquiry">Contact Our Team</a>
-                    </button>
+
+                    <a href="/quickenquiry"> <button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:bg-indigo-700 text-white font-medium py-3 px-8 rounded-lg transition-colors shadow-md hover:shadow-lg">
+                        Contact Our Team
+                    </button></a>
+
                 </div>
             </div>
         </section>

@@ -86,8 +86,8 @@ const HomeBanner = () => {
                     {/* Brand Stories with responsive layout */}
                     <div className="flex flex-col md:flex-row items-start mb-4 sm:mb-6 md:mb-8">
                         <div className="order-2 md:order-1 w-full md:w-1/2 lg:w-2/5">
-                            <p className="text-sm sm:text-base md:text-lg text-gray-200 mb-4 sm:mb-6 md:mb-0 animate-fadeInUp animation-delay-200 lg:text-xl">
-                                At Shree Khodiyar TechnoStack, we craft brands that feel trusted, look refined, and perform with impact. Our vision is to deliver high-quality, strategic design that turns ideas into standout brand experiences.
+                            <p className="text-sm sm:text-base md:text-lg text-gray-200 mb-4 sm:mb-6 md:mb-0 md:mt-5 animate-fadeInUp animation-delay-200 lg:text-xl ">
+                                Hey there!, We create trusted, refined, high-impact brands through strategic storytelling, digital marketing, and data-driven design — helping businesses connect and grow globally. 
                             </p>
                         </div>
 

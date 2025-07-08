@@ -12,151 +12,156 @@ const serviceCategories = [
         id: 'development',
         name: 'Development',
         icon: <FaCogs />,
-        description: 'End-to-end development services from concept to deployment',
+        description: 'Custom web and mobile development solutions tailored for growth and scalability.',
         details: [
-            'Custom software solutions tailored to your business needs',
-            'Cross-platform mobile applications with native performance',
-            'Scalable web applications with modern frameworks',
-            'API development and integration services',
-            'Cloud-native application development'
+            'Custom software tailored to your business processes',
+            'Cross-platform mobile apps (Android & iOS)',
+            'Modern web applications (React, Next.js, Django)',
+            'Robust API development & integration',
+            'Cloud-native, scalable architecture'
         ]
     },
     {
         id: 'design',
-        name: 'Design',
+        name: 'Design & UI/UX',
         icon: <FaDrawPolygon />,
-        description: 'Visual storytelling through stunning designs',
+        description: 'User-centric digital design that drives engagement and brand trust.',
         details: [
-            'UI/UX design with user-centered approach',
+            'Wireframing, prototyping, and user flow optimization',
+            'Modern, responsive UI for web & mobile apps',
+            'User behavior mapping and A/B testing',
+            'Brand visual systems and graphic design',
+            'Interaction design for high retention'
         ]
     },
     {
         id: 'consulting',
-        name: 'Consulting',
+        name: 'IT Consulting',
         icon: <FaUsers />,
-        description: 'Strategic guidance for your digital transformation',
+        description: 'Technology consulting to accelerate your digital transformation and innovation.',
         details: [
-            'Technology stack evaluation and recommendations',
-            'Digital transformation strategy',
-            'Process optimization and automation',
-            'Technical due diligence',
-            'Innovation workshops and training'
+            'Tech stack evaluation and roadmap creation',
+            'Digital transformation & automation strategy',
+            'Business process optimization',
+            'Tech audits and infrastructure review',
+            'Innovation workshops for scaling solutions'
         ]
     },
     {
         id: 'digital-marketing',
         name: 'Digital Marketing',
         icon: <FaBullhorn />,
-        description: 'Drive engagement and growth through data-driven marketing strategies',
+        description: 'Performance marketing strategies that drive leads, traffic, and revenue worldwide.',
         details: [
-            'SEO, SEM, and performance-based campaigns',
-            'Social media marketing and content strategy',
-            'Email marketing and automation',
-            'Analytics-driven targeting and optimization'
+            'Search engine optimization (SEO)',
+            'Google Ads & Meta performance campaigns',
+            'Social media content & management',
+            'Email automation & lead nurturing',
+            'Analytics and ROI-focused marketing'
         ]
     }
 ];
-
 const services = [
     {
         title: 'Web Development',
         icon: <FaCloud />,
-        description: 'Responsive, high-performance websites and web applications.',
+        description: 'Responsive websites and web apps built for performance, SEO, and scalability.',
         category: 'development',
-        keywords: ['web development', 'responsive design', 'web applications']
+        keywords: ['web development', 'responsive websites', 'react development', 'seo optimized websites']
     },
     {
         title: 'Shopify Web Development',
         icon: <FaShoppingCart />,
-        description: 'Custom Shopify stores that are fast, responsive, and designed to convert visitors into customers.',
+        description: 'Conversion-optimized Shopify stores designed for growth and user engagement.',
         category: 'development',
-        keywords: ['shopify development', 'ecommerce website', 'shopify theme customization', 'online store']
+        keywords: ['shopify development', 'ecommerce website', 'shopify theme', 'online store design']
     },
     {
         title: 'MVP & Product Development',
         icon: <FaUsers />,
-        description: 'Bring your ideas to life with rapid MVP development.',
+        description: 'Rapid MVP builds to validate ideas and launch in global markets efficiently.',
         category: 'development',
-        keywords: ['MVP development', 'product development', 'rapid prototyping']
+        keywords: ['MVP development', 'product launch', 'startup app development', 'agile development']
     },
     {
         title: 'Prototyping & UI/UX',
         icon: <FaDrawPolygon />,
-        description: 'Craft stunning user experiences and intuitive interfaces.',
+        description: 'Design intuitive user interfaces with pixel-perfect user experiences.',
         category: 'design',
-        keywords: ['UI/UX design', 'prototyping', 'user experience']
+        keywords: ['UI design', 'UX prototyping', 'user journey design', 'wireframing tools']
     },
     {
         title: 'Quality Assurance',
         icon: <FaShapes />,
-        description: 'Ensure flawless performance with rigorous testing and QA.',
+        description: 'End-to-end software testing to ensure bug-free and optimized performance.',
         category: 'consulting',
-        keywords: ['QA testing', 'quality assurance', 'software testing']
+        keywords: ['QA testing', 'manual testing', 'automated testing', 'quality control']
     },
     {
         title: 'Innovation Consulting',
         icon: <FaCube />,
-        description: 'Strategic guidance for innovative digital solutions.',
+        description: 'Digital innovation strategies to transform and modernize your business.',
         category: 'consulting',
-        keywords: ['tech consulting', 'innovation strategy', 'digital transformation']
+        keywords: ['digital transformation', 'innovation workshops', 'business automation']
     },
     {
         title: 'Social Media Marketing',
         icon: <FaShareAlt />,
-        description: 'Grow your brand across platforms with strategic content and engagement.',
+        description: 'Boost your brand across platforms with creative content and paid ads.',
         category: 'digital-marketing',
-        keywords: ['social media', 'instagram marketing', 'facebook strategy']
+        keywords: ['social media ads', 'facebook marketing', 'instagram strategy', 'social campaigns']
     },
     {
         title: 'Social Media Handling',
         icon: <FaHandsHelping />,
-        description: 'Professional management of your social profiles to build trust and community.',
+        description: 'Manage and grow your social presence with consistent, engaging content.',
         category: 'digital-marketing',
-        keywords: ['social media management', 'page handling', 'community building']
+        keywords: ['social media management', 'social strategy', 'community engagement']
     },
     {
         title: 'Google & Meta Ads',
         icon: <FaBullhorn />,
-        description: 'Drive traffic and leads with powerful ad campaigns across Google and Meta.',
+        description: 'Generate leads and traffic with high-converting ad campaigns.',
         category: 'digital-marketing',
-        keywords: ['google ads', 'meta ads', 'paid ads', 'performance marketing']
+        keywords: ['google ads', 'facebook ads', 'meta advertising', 'paid marketing']
     },
     {
         title: 'Graphics Design',
         icon: <FaPalette />,
-        description: 'Visual storytelling through eye-catching and effective designs.',
+        description: 'Create stunning visuals that elevate brand perception and identity.',
         category: 'design',
-        keywords: ['graphic design', 'branding', 'visual identity']
+        keywords: ['graphic design', 'brand assets', 'logo design', 'visual storytelling']
     },
     {
         title: 'SEO',
         icon: <FaSearch />,
-        description: 'Improve your online visibility with keyword-focused SEO strategies.',
+        description: 'Improve search visibility and drive organic traffic with technical SEO.',
         category: 'digital-marketing',
-        keywords: ['search engine optimization', 'on-page SEO', 'organic traffic']
+        keywords: ['SEO services', 'on-page SEO', 'technical SEO', 'keyword research']
     },
     {
         title: 'Performance Marketing',
         icon: <FaChartLine />,
-        description: 'Maximize ROI with data-driven advertising and conversion optimization.',
+        description: 'ROI-focused campaigns driven by analytics and conversion data.',
         category: 'digital-marketing',
-        keywords: ['ROI marketing', 'data-driven ads', 'conversion strategy']
+        keywords: ['performance marketing', 'conversion tracking', 'growth marketing']
     },
     {
         title: 'ERP & CRM Solutions (Python/Django)',
         icon: <FaDatabase />,
-        description: 'Custom ERP and CRM systems built with Django for seamless business operations.',
+        description: 'Automate business workflows with scalable ERP/CRM built using Django.',
         category: 'software-solutions',
-        keywords: ['ERP system', 'CRM software', 'django development', 'business automation']
+        keywords: ['ERP development', 'CRM system', 'django software', 'business process automation']
     },
     {
         title: 'Custom Software Solutions',
         icon: <FaCode />,
-        description: 'Tailored software applications to streamline and automate your business processes.',
+        description: 'Build powerful software to digitize your business processes end-to-end.',
         category: 'software-solutions',
-        keywords: ['custom software', 'business software', 'software development']
+        keywords: ['custom software', 'enterprise application', 'process automation']
     }
 ];
+
 
 const ServicesSection = () => {
     const [activeCategory, setActiveCategory] = useState('development');
@@ -204,8 +209,8 @@ const ServicesSection = () => {
                     transition={{ duration: 0.6 }}
                     className="text-center mb-8 md:mb-16"
                 >
-                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">
-                        Our Digital Solutions
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 ">
+                        Our <span className='bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600'>Digital Solutions</span>
                     </h2>
                     <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
                         Comprehensive services to transform your digital presence and drive business growth
@@ -273,8 +278,8 @@ const ServicesSection = () => {
                                 key={category.id}
                                 onClick={() => setActiveCategory(category.id)}
                                 className={`px-4 md:px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 flex items-center gap-2 ${activeCategory === category.id
-                                        ? 'bg-white text-gray-900 shadow-md'
-                                        : 'text-gray-600 hover:text-gray-900'
+                                    ? 'bg-white text-gray-900 shadow-md'
+                                    : 'text-gray-600 hover:text-gray-900'
                                     }`}
                             >
                                 <span className="text-lg">{category.icon}</span>
@@ -310,12 +315,12 @@ const ServicesSection = () => {
                                             <div className="flex items-start gap-3 md:gap-4">
                                                 <div
                                                     className={`p-2 md:p-3 rounded-lg text-xl md:text-2xl ${activeCategory === 'development'
-                                                            ? 'bg-blue-100 text-blue-600'
-                                                            : activeCategory === 'design'
-                                                                ? 'bg-purple-100 text-purple-600'
-                                                                : activeCategory === 'consulting'
-                                                                    ? 'bg-green-100 text-green-600'
-                                                                    : 'bg-orange-100 text-orange-600'
+                                                        ? 'bg-blue-100 text-blue-600'
+                                                        : activeCategory === 'design'
+                                                            ? 'bg-purple-100 text-purple-600'
+                                                            : activeCategory === 'consulting'
+                                                                ? 'bg-green-100 text-green-600'
+                                                                : 'bg-orange-100 text-orange-600'
                                                         }`}
                                                 >
                                                     {service.icon}
@@ -343,12 +348,12 @@ const ServicesSection = () => {
                                                                 <span
                                                                     key={i}
                                                                     className={`text-xs px-2 md:px-3 py-1 rounded-full ${activeCategory === 'development'
-                                                                            ? 'bg-blue-50 text-blue-700'
-                                                                            : activeCategory === 'design'
-                                                                                ? 'bg-purple-50 text-purple-700'
-                                                                                : activeCategory === 'consulting'
-                                                                                    ? 'bg-green-50 text-green-700'
-                                                                                    : 'bg-orange-50 text-orange-700'
+                                                                        ? 'bg-blue-50 text-blue-700'
+                                                                        : activeCategory === 'design'
+                                                                            ? 'bg-purple-50 text-purple-700'
+                                                                            : activeCategory === 'consulting'
+                                                                                ? 'bg-green-50 text-green-700'
+                                                                                : 'bg-orange-50 text-orange-700'
                                                                         }`}
                                                                 >
                                                                     {keyword}
@@ -372,12 +377,12 @@ const ServicesSection = () => {
                             viewport={{ once: true }}
                             transition={{ duration: 0.6, delay: 0.2 }}
                             className={`p-6 md:p-8 rounded-lg md:rounded-xl shadow-md md:shadow-lg h-full ${activeCategory === 'development'
-                                    ? 'bg-gradient-to-br from-blue-50 to-blue-100 border border-blue-200'
-                                    : activeCategory === 'design'
-                                        ? 'bg-gradient-to-br from-purple-50 to-purple-100 border border-purple-200'
-                                        : activeCategory === 'consulting'
-                                            ? 'bg-gradient-to-br from-green-50 to-green-100 border border-green-200'
-                                            : 'bg-gradient-to-br from-orange-50 to-orange-100 border border-orange-200'
+                                ? 'bg-gradient-to-br from-blue-50 to-blue-100 border border-blue-200'
+                                : activeCategory === 'design'
+                                    ? 'bg-gradient-to-br from-purple-50 to-purple-100 border border-purple-200'
+                                    : activeCategory === 'consulting'
+                                        ? 'bg-gradient-to-br from-green-50 to-green-100 border border-green-200'
+                                        : 'bg-gradient-to-br from-orange-50 to-orange-100 border border-orange-200'
                                 }`}
                         >
                             <div className="text-4xl md:text-5xl mb-3 md:mb-4 opacity-20">
@@ -396,12 +401,12 @@ const ServicesSection = () => {
                                         <li key={i} className="flex items-start">
                                             <svg
                                                 className={`flex-shrink-0 h-4 w-4 md:h-5 md:w-5 mt-1 mr-2 ${activeCategory === 'development'
-                                                        ? 'text-blue-500'
-                                                        : activeCategory === 'design'
-                                                            ? 'text-purple-500'
-                                                            : activeCategory === 'consulting'
-                                                                ? 'text-green-500'
-                                                                : 'text-orange-500'
+                                                    ? 'text-blue-500'
+                                                    : activeCategory === 'design'
+                                                        ? 'text-purple-500'
+                                                        : activeCategory === 'consulting'
+                                                            ? 'text-green-500'
+                                                            : 'text-orange-500'
                                                     }`}
                                                 fill="none"
                                                 viewBox="0 0 24 24"

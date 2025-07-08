@@ -159,12 +159,13 @@ const HomeTestimonials = () => {
                     >
                         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
                             <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">
-                                Voices of Satisfaction
+                                What Our Clients Say
                             </span>
                         </h1>
                         <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
-                            Hear directly from those who&apos;ve experienced our work
+                            Discover real success stories and client experiences that highlight our commitment to excellence, innovation, and measurable results.
                         </p>
+
                     </motion.header>
 
                     {/* Testimonial Carousel */}
@@ -320,8 +321,9 @@ const HomeTestimonials = () => {
                         className="mt-16 sm:mt-20 px-4"
                     >
                         <p className="text-center text-gray-500 text-sm sm:text-base mb-6">
-                            Trusted by innovative companies worldwide
+                            <span className='text-blue-500 '>Trusted</span>  by forward-thinking brands and businesses across the globe
                         </p>
+
                         <div className="flex flex-wrap justify-center gap-x-8 gap-y-6 sm:gap-10">
                             {["Google", "Microsoft", "Amazon", "Adobe", "Netflix"].map((company) => (
                                 <motion.div

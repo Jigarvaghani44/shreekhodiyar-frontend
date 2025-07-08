@@ -122,11 +122,12 @@ const BlogSection = () => {
                         INSIGHTS & PERSPECTIVES
                     </span>
                     <h2 className="text-4xl sm:text-5xl font-bold mb-4">
-                        Latest <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">Thinking</span>
+                        Latest <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">Digital Insights</span>
                     </h2>
                     <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-                        Cutting-edge research and industry perspectives from our team
+                        Explore expert strategies, emerging trends, and actionable ideas in digital marketing, web development, and innovation—crafted by our global team of specialists.
                     </p>
+
                 </motion.div>
 
                 {/* Floating 3D grid background */}
