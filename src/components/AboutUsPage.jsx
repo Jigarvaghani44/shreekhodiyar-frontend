@@ -114,7 +114,7 @@ const AboutUsPage = () => {
         {
             year: "2023",
             event: "Team Expansion",
-            description: "Expanded to 15 full-time employees and established our first physical office in Bangalore",
+            description: "Expanded to 15 full-time employees and opened our first physical office to support our growing team.",
             icon: <FiUsers className="text-white" />
         },
         {

@@ -100,7 +100,7 @@ const Footer = () => {
 
     const socialLinks = [
         { icon: <FaFacebook />, url: "#", name: "Facebook" },
-        { icon: <FaTwitter />, url: "#", name: "Twitter" },
+        // { icon: <FaTwitter />, url: "#", name: "Twitter" },
         { icon: <FaLinkedin />, url: "#", name: "LinkedIn" },
         { icon: <FaInstagram />, url: "#", name: "Instagram" },
         // { icon: <SiUpwork />, url: "#", name: "Upwork" },
@@ -131,7 +131,7 @@ const Footer = () => {
                         <p className="text-gray-300">
                             Transforming ideas into digital reality through innovative technology solutions and creative design.
                         </p>
-                        {/* <div className="flex space-x-4">
+                        <div className="flex space-x-4">
                             {socialLinks.slice(0, 4).map((social, index) => (
                                 <motion.a
                                     key={index}
@@ -143,7 +143,7 @@ const Footer = () => {
                                     {social.icon}
                                 </motion.a>
                             ))}
-                        </div> */}
+                        </div>
                         <div className="flex space-x-4">
                             {socialLinks.slice(4).map((social, index) => (
                                 <motion.a

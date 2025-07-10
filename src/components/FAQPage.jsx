@@ -34,7 +34,7 @@ const FAQPage = () => {
     const faqs = [
         {
             id: 1,
-            question: "What services does UniTechnoStack offer?",
+            question: "What services does ShreeKhodiyar TechnoStack offer?",
             answer: "We provide comprehensive digital solutions including web development, mobile app development, eCommerce solutions, UI/UX design, digital marketing, and custom software development tailored to your business needs.",
             category: 'general',
             featured: true
@@ -102,7 +102,7 @@ const FAQPage = () => {
         {
             id: 12,
             question: "How can I contact support?",
-            answer: "Our support team is available 24/7 via email at support@unitechnostack.com, live chat on our website, or phone at +1 (555) 123-4567 during business hours (9AM-5PM EST).",
+            answer: "Our support team is available 24/7 via email at support@shreekhodiyartech.com, live chat on our website, or phone at +91 9574160974 during business hours (9AM-6:30PM EST).",
             category: 'general'
         }
     ];
