@@ -18,14 +18,16 @@ import GamingHeroSection from "./GamingHeroSection";
 import OurServices from "./OurServices";
 import BusinessStarterGuide from "./businessStartup";
 import OurApproach from "./OurApproach";
+import FeaturedVideo from "./Featuredvideo";
 
 function Homepage() {
     return (
         <div className="Homepage">
             <OurServices />
-            <BusinessStarterGuide />
-            <OurApproach />
             <GamingHeroSection />
+            <FeaturedVideo />
+            <OurApproach />
+            <BusinessStarterGuide />
             <ScrollAnimationGallery />
             <WhatCanWeDoForYouSection />
             <SkillsSection />
